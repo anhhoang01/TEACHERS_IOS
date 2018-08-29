@@ -1,0 +1,30 @@
+PODS:
+  - Cosmos (16.0.0)
+  - LGSideMenuController (2.1.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - PureLayout (3.1)
+
+DEPENDENCIES:
+  - Cosmos (~> 16.0)
+  - LGSideMenuController (~> 2.1.1)
+  - MagicalRecord (~> 2.3.2)
+  - PureLayout (~> 3.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cosmos
+    - LGSideMenuController
+    - MagicalRecord
+    - PureLayout
+
+SPEC CHECKSUMS:
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  PureLayout: 7fba48da8b04f0a1fea33d3424b016e958d33ac0
+
+PODFILE CHECKSUM: b9b07c4190a31df1eb36858ea859f8cf519d3e60
+
+COCOAPODS: 1.5.3
