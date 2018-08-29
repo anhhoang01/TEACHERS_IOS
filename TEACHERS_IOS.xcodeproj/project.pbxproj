@@ -1,0 +1,1338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0421EB5A212BB6530024CACD /* RBGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB59212BB6530024CACD /* RBGColor.swift */; };
+		0421EB5C212BB83C0024CACD /* BoderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB5B212BB83C0024CACD /* BoderTextField.swift */; };
+		0421EB5F212BC2D00024CACD /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB5E212BC2D00024CACD /* GreenButton.swift */; };
+		0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB60212BC5490024CACD /* WhiteButton.swift */; };
+		0421EB64212BC8F20024CACD /* Register_CardIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */; };
+		0421EB65212BC8F20024CACD /* Register_CardIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */; };
+		0422EFE221338CF300939059 /* Date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDA21338CF200939059 /* Date+EXT.swift */; };
+		0422EFE321338CF300939059 /* Array+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDB21338CF300939059 /* Array+EXT.swift */; };
+		0422EFE421338CF300939059 /* UIDevice+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDC21338CF300939059 /* UIDevice+EXT.swift */; };
+		0422EFE521338CF300939059 /* Font+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDD21338CF300939059 /* Font+EXT.swift */; };
+		0422EFE621338CF300939059 /* UITableViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDE21338CF300939059 /* UITableViewController+EXT.swift */; };
+		0422EFE721338CF300939059 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDF21338CF300939059 /* UIImage+EXT.swift */; };
+		0422EFE821338CF300939059 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFE021338CF300939059 /* UIColor+Ex.swift */; };
+		0422EFE921338CF300939059 /* Number+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFE121338CF300939059 /* Number+EXT.swift */; };
+		0422EFEB21339B4700939059 /* BaseViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFEA21339B4700939059 /* BaseViewcontroller.swift */; };
+		0422EFF02133BB2500939059 /* BaseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFEF2133BB2500939059 /* BaseSlider.swift */; };
+		0422EFF32133BCDE00939059 /* BaseSegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFF22133BCDE00939059 /* BaseSegmentedController.swift */; };
+		0422EFFC2133CBBD00939059 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFFB2133CBBD00939059 /* DatePicker.swift */; };
+		0422EFFE2133CBEA00939059 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFFD2133CBEA00939059 /* MapView.swift */; };
+		0422F0072133CE5A00939059 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F0062133CE5A00939059 /* BaseTextField.swift */; };
+		0422F00D2133D44900939059 /* PulicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F00C2133D44900939059 /* PulicStruct.swift */; };
+		0422F0182133F96E00939059 /* Nikme in Resources */ = {isa = PBXBuildFile; fileRef = 0422F0172133F96E00939059 /* Nikme */; };
+		04493FBB212E6B0E00F8A23A /* ServiceDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBA212E6B0E00F8A23A /* ServiceDefine.swift */; };
+		04493FBD212E74E000F8A23A /* Date+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBC212E74E000F8A23A /* Date+ETX.swift */; };
+		04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBE212E750E00F8A23A /* Notification+ETX.swift */; };
+		04493FC1212E75E000F8A23A /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FC0212E75E000F8A23A /* UIHelper.swift */; };
+		04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04622B24212B9BF000E3AC5F /* DropDownCell.xib */; };
+		04622B29212B9BF000E3AC5F /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B25212B9BF000E3AC5F /* DropDown.swift */; };
+		04622B2A212B9BF000E3AC5F /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */; };
+		04622B2B212B9BF000E3AC5F /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B27212B9BF000E3AC5F /* DropDownCell.swift */; };
+		04622B2F212B9E5900E3AC5F /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B2C212B9E5800E3AC5F /* DPDConstants.swift */; };
+		04622B30212B9E5900E3AC5F /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B2D212B9E5800E3AC5F /* DPDKeyboardListener.swift */; };
+		04622B31212B9E5900E3AC5F /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B2E212B9E5900E3AC5F /* DPDUIView+Extension.swift */; };
+		04622B35212BAECF00E3AC5F /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B34212BAECF00E3AC5F /* DropDownButton.swift */; };
+		0467C59B212F92130047CA03 /* BackgroundSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467C59A212F92130047CA03 /* BackgroundSideViewController.swift */; };
+		0467C59D212F92760047CA03 /* UIViewController+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467C59C212F92760047CA03 /* UIViewController+ETX.swift */; };
+		0479E3E2212CFCD6002D22B7 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E1212CFCD6002D22B7 /* DatePickerDialog.swift */; };
+		0479E3E5212D405F002D22B7 /* ValidatedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */; };
+		0479E3E7212D462B002D22B7 /* String+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E6212D462B002D22B7 /* String+ETX.swift */; };
+		0479E3F0212D6B3B002D22B7 /* ValidLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3EF212D6B3B002D22B7 /* ValidLabel.swift */; };
+		0488400F212EB82900E2C38B /* RoundConnerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488400E212EB82900E2C38B /* RoundConnerUIView.swift */; };
+		04884011212EB9A400E2C38B /* BorderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04884010212EB9A400E2C38B /* BorderUIView.swift */; };
+		048EC3942134DCB400557B28 /* Lesson_reservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EC3922134DCB400557B28 /* Lesson_reservationTableViewCell.swift */; };
+		048EC3952134DCB400557B28 /* Lesson_reservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048EC3932134DCB400557B28 /* Lesson_reservationTableViewCell.xib */; };
+		048EC3972134FCC300557B28 /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EC3962134FCC300557B28 /* BoldLabel.swift */; };
+		048EC39A2135018D00557B28 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EC3992135018D00557B28 /* CircleImageView.swift */; };
+		048EC39C2135293400557B28 /* BorderRoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EC39B2135293400557B28 /* BorderRoundUIView.swift */; };
+		048FA0FA212E87F9009CCC62 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA0F9212E87F9009CCC62 /* UserManager.swift */; };
+		048FA0FD212E8E62009CCC62 /* Register_BackTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA0FB212E8E62009CCC62 /* Register_BackTopViewController.swift */; };
+		048FA0FE212E8E62009CCC62 /* Register_BackTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FA0FC212E8E62009CCC62 /* Register_BackTopViewController.xib */; };
+		048FA102212E9AFC009CCC62 /* Student_toppageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA100212E9AFC009CCC62 /* Student_toppageViewController.swift */; };
+		048FA103212E9AFC009CCC62 /* Student_toppageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FA101212E9AFC009CCC62 /* Student_toppageViewController.xib */; };
+		048FA105212E9E3D009CCC62 /* WhiteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA104212E9E3D009CCC62 /* WhiteLabel.swift */; };
+		048FA108212EACC9009CCC62 /* UIView+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FA107212EACC9009CCC62 /* UIView+ETX.swift */; };
+		049D252721250EB50054214E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D252621250EB50054214E /* AppDelegate.swift */; };
+		049D252E21250EB50054214E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049D252D21250EB50054214E /* Assets.xcassets */; };
+		049D253121250EB50054214E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049D252F21250EB50054214E /* LaunchScreen.storyboard */; };
+		049D253C21250EB50054214E /* TEACHERS_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D253B21250EB50054214E /* TEACHERS_IOSTests.swift */; };
+		049D254721250EB60054214E /* TEACHERS_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D254621250EB60054214E /* TEACHERS_IOSUITests.swift */; };
+		049D255D2125104B0054214E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D255B2125104B0054214E /* LoginViewController.swift */; };
+		049D255E2125104B0054214E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D255C2125104B0054214E /* LoginViewController.xib */; };
+		049D2564212520820054214E /* Forgot_passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D2562212520820054214E /* Forgot_passwordViewController.swift */; };
+		049D2565212520820054214E /* Forgot_passwordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D2563212520820054214E /* Forgot_passwordViewController.xib */; };
+		049D256821252D230054214E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D256621252D230054214E /* RegisterViewController.swift */; };
+		049D256921252D230054214E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D256721252D230054214E /* RegisterViewController.xib */; };
+		049D256C21255B240054214E /* MaxLengthTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D256B21255B240054214E /* MaxLengthTextfield.swift */; };
+		04F205E1212FAA5C00E94B20 /* Student_profile_editViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205DF212FAA5C00E94B20 /* Student_profile_editViewController.swift */; };
+		04F205E2212FAA5C00E94B20 /* Student_profile_editViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205E0212FAA5C00E94B20 /* Student_profile_editViewController.xib */; };
+		04F205E4212FB19700E94B20 /* DisableTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205E3212FB19700E94B20 /* DisableTextfield.swift */; };
+		04F205E7212FB26E00E94B20 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205E6212FB26E00E94B20 /* BaseTextView.swift */; };
+		04F205EB212FB46200E94B20 /* Change_passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205E9212FB46200E94B20 /* Change_passwordViewController.swift */; };
+		04F205EC212FB46200E94B20 /* Change_passwordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205EA212FB46200E94B20 /* Change_passwordViewController.xib */; };
+		04F205F1212FB6E700E94B20 /* Student_SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205EF212FB6E700E94B20 /* Student_SettingViewController.swift */; };
+		04F205F2212FB6E700E94B20 /* Student_SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205F0212FB6E700E94B20 /* Student_SettingViewController.xib */; };
+		04F205F6212FB8B600E94B20 /* Inquiry_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205F4212FB8B600E94B20 /* Inquiry_ViewController.swift */; };
+		04F205F7212FB8B600E94B20 /* Inquiry_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205F5212FB8B600E94B20 /* Inquiry_ViewController.xib */; };
+		04F205FB212FBA2D00E94B20 /* Terms_of_serviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205F9212FBA2D00E94B20 /* Terms_of_serviceViewController.swift */; };
+		04F205FC212FBA2D00E94B20 /* Terms_of_serviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205FA212FBA2D00E94B20 /* Terms_of_serviceViewController.xib */; };
+		04F20600212FBBD500E94B20 /* Lesson_reservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205FE212FBBD500E94B20 /* Lesson_reservationViewController.swift */; };
+		04F20601212FBBD500E94B20 /* Lesson_reservationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205FF212FBBD500E94B20 /* Lesson_reservationViewController.xib */; };
+		04F20605212FEB0400E94B20 /* MenuTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F20603212FEB0400E94B20 /* MenuTableTableViewCell.swift */; };
+		04F20606212FEB0400E94B20 /* MenuTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F20604212FEB0400E94B20 /* MenuTableTableViewCell.xib */; };
+		04F2060F212FF44C00E94B20 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2060D212FF44C00E94B20 /* MenuTableViewController.swift */; };
+		04F20610212FF44C00E94B20 /* MenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F2060E212FF44C00E94B20 /* MenuTableViewController.xib */; };
+		04F20612212FFD6D00E94B20 /* AppDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F20611212FFD6D00E94B20 /* AppDefines.swift */; };
+		04F20615213006CC00E94B20 /* BaseNavigationViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F20614213006CC00E94B20 /* BaseNavigationViewCotroller.swift */; };
+		5BB0C821EFA68BA03EACC338 /* Pods_TEACHERS_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2AC14DAE18FA31B01A1063 /* Pods_TEACHERS_IOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049D253821250EB50054214E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049D251B21250EB50054214E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049D252221250EB50054214E;
+			remoteInfo = TEACHERS_IOS;
+		};
+		049D254321250EB50054214E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049D251B21250EB50054214E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049D252221250EB50054214E;
+			remoteInfo = TEACHERS_IOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0441DDFE21266CFA0023E22E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0421EB59212BB6530024CACD /* RBGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBGColor.swift; sourceTree = "<group>"; };
+		0421EB5B212BB83C0024CACD /* BoderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoderTextField.swift; path = ../Custom/BoderTextField.swift; sourceTree = "<group>"; };
+		0421EB5E212BC2D00024CACD /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		0421EB60212BC5490024CACD /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_CardIDViewController.swift; sourceTree = "<group>"; };
+		0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register_CardIDViewController.xib; sourceTree = "<group>"; };
+		0422EFDA21338CF200939059 /* Date+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+EXT.swift"; sourceTree = "<group>"; };
+		0422EFDB21338CF300939059 /* Array+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+EXT.swift"; sourceTree = "<group>"; };
+		0422EFDC21338CF300939059 /* UIDevice+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+EXT.swift"; sourceTree = "<group>"; };
+		0422EFDD21338CF300939059 /* Font+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+EXT.swift"; sourceTree = "<group>"; };
+		0422EFDE21338CF300939059 /* UITableViewController+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+EXT.swift"; sourceTree = "<group>"; };
+		0422EFDF21338CF300939059 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
+		0422EFE021338CF300939059 /* UIColor+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		0422EFE121338CF300939059 /* Number+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+EXT.swift"; sourceTree = "<group>"; };
+		0422EFEA21339B4700939059 /* BaseViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewcontroller.swift; sourceTree = "<group>"; };
+		0422EFEF2133BB2500939059 /* BaseSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlider.swift; sourceTree = "<group>"; };
+		0422EFF22133BCDE00939059 /* BaseSegmentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSegmentedController.swift; sourceTree = "<group>"; };
+		0422EFFB2133CBBD00939059 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		0422EFFD2133CBEA00939059 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0422F0062133CE5A00939059 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		0422F00C2133D44900939059 /* PulicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulicStruct.swift; sourceTree = "<group>"; };
+		0422F0172133F96E00939059 /* Nikme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nikme; sourceTree = "<group>"; };
+		0441DDF3212654960023E22E /* libDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0441DDF52126549E0023E22E /* libLGSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLGSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04493FBA212E6B0E00F8A23A /* ServiceDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDefine.swift; sourceTree = "<group>"; };
+		04493FBC212E74E000F8A23A /* Date+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ETX.swift"; sourceTree = "<group>"; };
+		04493FBE212E750E00F8A23A /* Notification+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+ETX.swift"; sourceTree = "<group>"; };
+		04493FC0212E75E000F8A23A /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		04622B24212B9BF000E3AC5F /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		04622B25212B9BF000E3AC5F /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		04622B27212B9BF000E3AC5F /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		04622B2C212B9E5800E3AC5F /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		04622B2D212B9E5800E3AC5F /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		04622B2E212B9E5900E3AC5F /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		04622B34212BAECF00E3AC5F /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		0467C59A212F92130047CA03 /* BackgroundSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSideViewController.swift; sourceTree = "<group>"; };
+		0467C59C212F92760047CA03 /* UIViewController+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ETX.swift"; sourceTree = "<group>"; };
+		0479E3E1212CFCD6002D22B7 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedHelper.swift; sourceTree = "<group>"; };
+		0479E3E6212D462B002D22B7 /* String+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ETX.swift"; sourceTree = "<group>"; };
+		0479E3EF212D6B3B002D22B7 /* ValidLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidLabel.swift; sourceTree = "<group>"; };
+		0488400E212EB82900E2C38B /* RoundConnerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundConnerUIView.swift; sourceTree = "<group>"; };
+		04884010212EB9A400E2C38B /* BorderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderUIView.swift; sourceTree = "<group>"; };
+		048EC3922134DCB400557B28 /* Lesson_reservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson_reservationTableViewCell.swift; sourceTree = "<group>"; };
+		048EC3932134DCB400557B28 /* Lesson_reservationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Lesson_reservationTableViewCell.xib; sourceTree = "<group>"; };
+		048EC3962134FCC300557B28 /* BoldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldLabel.swift; sourceTree = "<group>"; };
+		048EC3992135018D00557B28 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		048EC39B2135293400557B28 /* BorderRoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRoundUIView.swift; sourceTree = "<group>"; };
+		048FA0F9212E87F9009CCC62 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		048FA0FB212E8E62009CCC62 /* Register_BackTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_BackTopViewController.swift; sourceTree = "<group>"; };
+		048FA0FC212E8E62009CCC62 /* Register_BackTopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register_BackTopViewController.xib; sourceTree = "<group>"; };
+		048FA100212E9AFC009CCC62 /* Student_toppageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_toppageViewController.swift; sourceTree = "<group>"; };
+		048FA101212E9AFC009CCC62 /* Student_toppageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_toppageViewController.xib; sourceTree = "<group>"; };
+		048FA104212E9E3D009CCC62 /* WhiteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteLabel.swift; sourceTree = "<group>"; };
+		048FA107212EACC9009CCC62 /* UIView+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ETX.swift"; sourceTree = "<group>"; };
+		049D252321250EB50054214E /* TEACHERS_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEACHERS_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049D252621250EB50054214E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		049D252D21250EB50054214E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049D253021250EB50054214E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049D253221250EB50054214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049D253721250EB50054214E /* TEACHERS_IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEACHERS_IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049D253B21250EB50054214E /* TEACHERS_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEACHERS_IOSTests.swift; sourceTree = "<group>"; };
+		049D253D21250EB50054214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049D254221250EB50054214E /* TEACHERS_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEACHERS_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049D254621250EB60054214E /* TEACHERS_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEACHERS_IOSUITests.swift; sourceTree = "<group>"; };
+		049D254821250EB60054214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049D255B2125104B0054214E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		049D255C2125104B0054214E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		049D2562212520820054214E /* Forgot_passwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgot_passwordViewController.swift; sourceTree = "<group>"; };
+		049D2563212520820054214E /* Forgot_passwordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Forgot_passwordViewController.xib; sourceTree = "<group>"; };
+		049D256621252D230054214E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		049D256721252D230054214E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		049D256B21255B240054214E /* MaxLengthTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthTextfield.swift; sourceTree = "<group>"; };
+		04F205DF212FAA5C00E94B20 /* Student_profile_editViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_profile_editViewController.swift; sourceTree = "<group>"; };
+		04F205E0212FAA5C00E94B20 /* Student_profile_editViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_profile_editViewController.xib; sourceTree = "<group>"; };
+		04F205E3212FB19700E94B20 /* DisableTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableTextfield.swift; sourceTree = "<group>"; };
+		04F205E6212FB26E00E94B20 /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		04F205E9212FB46200E94B20 /* Change_passwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change_passwordViewController.swift; sourceTree = "<group>"; };
+		04F205EA212FB46200E94B20 /* Change_passwordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Change_passwordViewController.xib; sourceTree = "<group>"; };
+		04F205EF212FB6E700E94B20 /* Student_SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_SettingViewController.swift; sourceTree = "<group>"; };
+		04F205F0212FB6E700E94B20 /* Student_SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_SettingViewController.xib; sourceTree = "<group>"; };
+		04F205F4212FB8B600E94B20 /* Inquiry_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inquiry_ViewController.swift; sourceTree = "<group>"; };
+		04F205F5212FB8B600E94B20 /* Inquiry_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Inquiry_ViewController.xib; sourceTree = "<group>"; };
+		04F205F9212FBA2D00E94B20 /* Terms_of_serviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terms_of_serviceViewController.swift; sourceTree = "<group>"; };
+		04F205FA212FBA2D00E94B20 /* Terms_of_serviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Terms_of_serviceViewController.xib; sourceTree = "<group>"; };
+		04F205FE212FBBD500E94B20 /* Lesson_reservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson_reservationViewController.swift; sourceTree = "<group>"; };
+		04F205FF212FBBD500E94B20 /* Lesson_reservationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Lesson_reservationViewController.xib; sourceTree = "<group>"; };
+		04F20603212FEB0400E94B20 /* MenuTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableTableViewCell.swift; sourceTree = "<group>"; };
+		04F20604212FEB0400E94B20 /* MenuTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableTableViewCell.xib; sourceTree = "<group>"; };
+		04F2060D212FF44C00E94B20 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		04F2060E212FF44C00E94B20 /* MenuTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewController.xib; sourceTree = "<group>"; };
+		04F20611212FFD6D00E94B20 /* AppDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefines.swift; sourceTree = "<group>"; };
+		04F20614213006CC00E94B20 /* BaseNavigationViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewCotroller.swift; sourceTree = "<group>"; };
+		8067575CBF252832AADBC15A /* Pods-TEACHERS_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEACHERS_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		C1B72CF13F6367AE611A0066 /* Pods-TEACHERS_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEACHERS_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2AC14DAE18FA31B01A1063 /* Pods_TEACHERS_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEACHERS_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049D252021250EB50054214E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB0C821EFA68BA03EACC338 /* Pods_TEACHERS_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D253421250EB50054214E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D253F21250EB50054214E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0421EB58212BB63B0024CACD /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				0421EB59212BB6530024CACD /* RBGColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		0421EB5D212BB8440024CACD /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				049D256B21255B240054214E /* MaxLengthTextfield.swift */,
+				04F205E3212FB19700E94B20 /* DisableTextfield.swift */,
+			);
+			name = Textfield;
+			sourceTree = "<group>";
+		};
+		0422EFEC2133BAC800939059 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFEA21339B4700939059 /* BaseViewcontroller.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		0422EFED2133BADA00939059 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				04F20614213006CC00E94B20 /* BaseNavigationViewCotroller.swift */,
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		0422EFEE2133BAEF00939059 /* SegmentedController */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFF22133BCDE00939059 /* BaseSegmentedController.swift */,
+			);
+			path = SegmentedController;
+			sourceTree = "<group>";
+		};
+		0422EFF12133BCB500939059 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFEF2133BB2500939059 /* BaseSlider.swift */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		0422EFF62133BD2400939059 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFFA2133BD6B00939059 /* Datetime View */,
+				0422EFF82133BD4C00939059 /* MapView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0422EFF82133BD4C00939059 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFFD2133CBEA00939059 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		0422EFFA2133BD6B00939059 /* Datetime View */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFFB2133CBBD00939059 /* DatePicker.swift */,
+			);
+			path = "Datetime View";
+			sourceTree = "<group>";
+		};
+		0422F0052133CE2D00939059 /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				0421EB5B212BB83C0024CACD /* BoderTextField.swift */,
+				0422F0062133CE5A00939059 /* BaseTextField.swift */,
+			);
+			name = Textfield;
+			sourceTree = "<group>";
+		};
+		04493FB8212E6A0500F8A23A /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				04493FB9212E6A7500F8A23A /* Service */,
+				04F20611212FFD6D00E94B20 /* AppDefines.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		04493FB9212E6A7500F8A23A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04493FBA212E6B0E00F8A23A /* ServiceDefine.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		04622B23212B9BC600E3AC5F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0479E3DE212CEE7A002D22B7 /* Datepicker */,
+				0479E3DD212CEE66002D22B7 /* DropDown */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		04622B32212BAEA200E3AC5F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				048EC3982135017900557B28 /* ImageView */,
+				04F205E5212FB24C00E94B20 /* Textview */,
+				048FA106212EACA4009CCC62 /* UIView */,
+				0479E3EE212D6B22002D22B7 /* Label */,
+				0421EB5D212BB8440024CACD /* Textfield */,
+				0421EB58212BB63B0024CACD /* UIColor */,
+				04622B33212BAEAB00E3AC5F /* Button */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		04622B33212BAEAB00E3AC5F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				04622B34212BAECF00E3AC5F /* DropDownButton.swift */,
+				0421EB5E212BC2D00024CACD /* GreenButton.swift */,
+				0421EB60212BC5490024CACD /* WhiteButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		0467C598212F91E90047CA03 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0422F0052133CE2D00939059 /* Textfield */,
+				0422EFF62133BD2400939059 /* View */,
+				0422EFF12133BCB500939059 /* Slider */,
+				0422EFEE2133BAEF00939059 /* SegmentedController */,
+				0422EFED2133BADA00939059 /* NavigationController */,
+				0422EFEC2133BAC800939059 /* Viewcontroller */,
+				0467C599212F91F00047CA03 /* LGSlideMenuController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0467C599212F91F00047CA03 /* LGSlideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				0467C59A212F92130047CA03 /* BackgroundSideViewController.swift */,
+			);
+			name = LGSlideMenuController;
+			sourceTree = "<group>";
+		};
+		0479E3DD212CEE66002D22B7 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				04622B2C212B9E5800E3AC5F /* DPDConstants.swift */,
+				04622B2D212B9E5800E3AC5F /* DPDKeyboardListener.swift */,
+				04622B2E212B9E5900E3AC5F /* DPDUIView+Extension.swift */,
+				04622B25212B9BF000E3AC5F /* DropDown.swift */,
+				04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */,
+				04622B27212B9BF000E3AC5F /* DropDownCell.swift */,
+				04622B24212B9BF000E3AC5F /* DropDownCell.xib */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		0479E3DE212CEE7A002D22B7 /* Datepicker */ = {
+			isa = PBXGroup;
+			children = (
+				0479E3E1212CFCD6002D22B7 /* DatePickerDialog.swift */,
+			);
+			name = Datepicker;
+			sourceTree = "<group>";
+		};
+		0479E3E3212D4035002D22B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */,
+				04493FC0212E75E000F8A23A /* UIHelper.swift */,
+				0422F00C2133D44900939059 /* PulicStruct.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		0479E3EE212D6B22002D22B7 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				0479E3EF212D6B3B002D22B7 /* ValidLabel.swift */,
+				048FA104212E9E3D009CCC62 /* WhiteLabel.swift */,
+				048EC3962134FCC300557B28 /* BoldLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		048EC3912134DC6C00557B28 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				048EC3922134DCB400557B28 /* Lesson_reservationTableViewCell.swift */,
+				048EC3932134DCB400557B28 /* Lesson_reservationTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		048EC3982135017900557B28 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				048EC3992135018D00557B28 /* CircleImageView.swift */,
+			);
+			name = ImageView;
+			sourceTree = "<group>";
+		};
+		048FA0F7212E87C8009CCC62 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				048FA0F8212E87D8009CCC62 /* UserManager */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		048FA0F8212E87D8009CCC62 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				048FA0F9212E87F9009CCC62 /* UserManager.swift */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		048FA0FF212E9AA1009CCC62 /* 4.Student_toppage */ = {
+			isa = PBXGroup;
+			children = (
+				048FA100212E9AFC009CCC62 /* Student_toppageViewController.swift */,
+				048FA101212E9AFC009CCC62 /* Student_toppageViewController.xib */,
+			);
+			name = 4.Student_toppage;
+			sourceTree = "<group>";
+		};
+		048FA106212EACA4009CCC62 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0488400E212EB82900E2C38B /* RoundConnerUIView.swift */,
+				04884010212EB9A400E2C38B /* BorderUIView.swift */,
+				048EC39B2135293400557B28 /* BorderRoundUIView.swift */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		049D251A21250EB50054214E = {
+			isa = PBXGroup;
+			children = (
+				0422F0172133F96E00939059 /* Nikme */,
+				049D252521250EB50054214E /* TEACHERS_IOS */,
+				049D253A21250EB50054214E /* TEACHERS_IOSTests */,
+				049D254521250EB60054214E /* TEACHERS_IOSUITests */,
+				049D252421250EB50054214E /* Products */,
+				D223CF5D8A156FB8A58143C9 /* Pods */,
+				15213A000E9FC4D3F159C283 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		049D252421250EB50054214E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049D252321250EB50054214E /* TEACHERS_IOS.app */,
+				049D253721250EB50054214E /* TEACHERS_IOSTests.xctest */,
+				049D254221250EB50054214E /* TEACHERS_IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049D252521250EB50054214E /* TEACHERS_IOS */ = {
+			isa = PBXGroup;
+			children = (
+				049D255621250F0F0054214E /* Classess */,
+			);
+			path = TEACHERS_IOS;
+			sourceTree = "<group>";
+		};
+		049D253A21250EB50054214E /* TEACHERS_IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				049D253B21250EB50054214E /* TEACHERS_IOSTests.swift */,
+				049D253D21250EB50054214E /* Info.plist */,
+			);
+			path = TEACHERS_IOSTests;
+			sourceTree = "<group>";
+		};
+		049D254521250EB60054214E /* TEACHERS_IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				049D254621250EB60054214E /* TEACHERS_IOSUITests.swift */,
+				049D254821250EB60054214E /* Info.plist */,
+			);
+			path = TEACHERS_IOSUITests;
+			sourceTree = "<group>";
+		};
+		049D255621250F0F0054214E /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				0467C598212F91E90047CA03 /* Base */,
+				048FA0F7212E87C8009CCC62 /* Manager */,
+				04493FB8212E6A0500F8A23A /* Defines */,
+				0479E3E3212D4035002D22B7 /* Helper */,
+				04622B32212BAEA200E3AC5F /* Custom */,
+				04622B23212B9BC600E3AC5F /* Library */,
+				049D256A212559190054214E /* Extention */,
+				049D255921250F440054214E /* Resource */,
+				049D255821250F230054214E /* AppDelegate */,
+				049D255721250F160054214E /* Controller */,
+			);
+			name = Classess;
+			sourceTree = "<group>";
+		};
+		049D255721250F160054214E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F20608212FF34A00E94B20 /* MenuTable */,
+				04F205FD212FBB8200E94B20 /* 5.Lesson_reservation */,
+				04F205F8212FBA0900E94B20 /* 15.Terms of service */,
+				04F205F3212FB89600E94B20 /* 14.Inquiry */,
+				04F205EE212FB6C300E94B20 /* 13.Student_setting */,
+				04F205DE212FA9D700E94B20 /* 12.Student_profile_edit */,
+				048FA0FF212E9AA1009CCC62 /* 4.Student_toppage */,
+				049D255F212520230054214E /* Register */,
+				049D255A2125102D0054214E /* 1.Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		049D255821250F230054214E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				049D252621250EB50054214E /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		049D255921250F440054214E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				049D253221250EB50054214E /* Info.plist */,
+				049D252F21250EB50054214E /* LaunchScreen.storyboard */,
+				049D252D21250EB50054214E /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		049D255A2125102D0054214E /* 1.Login */ = {
+			isa = PBXGroup;
+			children = (
+				049D25612125204A0054214E /* Forgot_Password */,
+				049D255B2125104B0054214E /* LoginViewController.swift */,
+				049D255C2125104B0054214E /* LoginViewController.xib */,
+			);
+			name = 1.Login;
+			sourceTree = "<group>";
+		};
+		049D255F212520230054214E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				049D256621252D230054214E /* RegisterViewController.swift */,
+				049D256721252D230054214E /* RegisterViewController.xib */,
+				0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */,
+				0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */,
+				048FA0FB212E8E62009CCC62 /* Register_BackTopViewController.swift */,
+				048FA0FC212E8E62009CCC62 /* Register_BackTopViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		049D25612125204A0054214E /* Forgot_Password */ = {
+			isa = PBXGroup;
+			children = (
+				049D2562212520820054214E /* Forgot_passwordViewController.swift */,
+				049D2563212520820054214E /* Forgot_passwordViewController.xib */,
+			);
+			path = Forgot_Password;
+			sourceTree = "<group>";
+		};
+		049D256A212559190054214E /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				0422EFDB21338CF300939059 /* Array+EXT.swift */,
+				0422EFDA21338CF200939059 /* Date+EXT.swift */,
+				0422EFDD21338CF300939059 /* Font+EXT.swift */,
+				0422EFE121338CF300939059 /* Number+EXT.swift */,
+				0422EFE021338CF300939059 /* UIColor+Ex.swift */,
+				0422EFDC21338CF300939059 /* UIDevice+EXT.swift */,
+				0422EFDF21338CF300939059 /* UIImage+EXT.swift */,
+				0422EFDE21338CF300939059 /* UITableViewController+EXT.swift */,
+				048FA107212EACC9009CCC62 /* UIView+ETX.swift */,
+				0479E3E6212D462B002D22B7 /* String+ETX.swift */,
+				04493FBC212E74E000F8A23A /* Date+ETX.swift */,
+				04493FBE212E750E00F8A23A /* Notification+ETX.swift */,
+				0467C59C212F92760047CA03 /* UIViewController+ETX.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		04F205DE212FA9D700E94B20 /* 12.Student_profile_edit */ = {
+			isa = PBXGroup;
+			children = (
+				04F205E8212FB43300E94B20 /* Change_password */,
+				04F205DF212FAA5C00E94B20 /* Student_profile_editViewController.swift */,
+				04F205E0212FAA5C00E94B20 /* Student_profile_editViewController.xib */,
+			);
+			name = 12.Student_profile_edit;
+			sourceTree = "<group>";
+		};
+		04F205E5212FB24C00E94B20 /* Textview */ = {
+			isa = PBXGroup;
+			children = (
+				04F205E6212FB26E00E94B20 /* BaseTextView.swift */,
+			);
+			path = Textview;
+			sourceTree = "<group>";
+		};
+		04F205E8212FB43300E94B20 /* Change_password */ = {
+			isa = PBXGroup;
+			children = (
+				04F205E9212FB46200E94B20 /* Change_passwordViewController.swift */,
+				04F205EA212FB46200E94B20 /* Change_passwordViewController.xib */,
+			);
+			path = Change_password;
+			sourceTree = "<group>";
+		};
+		04F205EE212FB6C300E94B20 /* 13.Student_setting */ = {
+			isa = PBXGroup;
+			children = (
+				04F205EF212FB6E700E94B20 /* Student_SettingViewController.swift */,
+				04F205F0212FB6E700E94B20 /* Student_SettingViewController.xib */,
+			);
+			path = 13.Student_setting;
+			sourceTree = "<group>";
+		};
+		04F205F3212FB89600E94B20 /* 14.Inquiry */ = {
+			isa = PBXGroup;
+			children = (
+				04F205F4212FB8B600E94B20 /* Inquiry_ViewController.swift */,
+				04F205F5212FB8B600E94B20 /* Inquiry_ViewController.xib */,
+			);
+			path = 14.Inquiry;
+			sourceTree = "<group>";
+		};
+		04F205F8212FBA0900E94B20 /* 15.Terms of service */ = {
+			isa = PBXGroup;
+			children = (
+				04F205F9212FBA2D00E94B20 /* Terms_of_serviceViewController.swift */,
+				04F205FA212FBA2D00E94B20 /* Terms_of_serviceViewController.xib */,
+			);
+			name = "15.Terms of service";
+			sourceTree = "<group>";
+		};
+		04F205FD212FBB8200E94B20 /* 5.Lesson_reservation */ = {
+			isa = PBXGroup;
+			children = (
+				048EC3912134DC6C00557B28 /* Cell */,
+				04F205FE212FBBD500E94B20 /* Lesson_reservationViewController.swift */,
+				04F205FF212FBBD500E94B20 /* Lesson_reservationViewController.xib */,
+			);
+			path = 5.Lesson_reservation;
+			sourceTree = "<group>";
+		};
+		04F20602212FEA5700E94B20 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04F20603212FEB0400E94B20 /* MenuTableTableViewCell.swift */,
+				04F20604212FEB0400E94B20 /* MenuTableTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04F20608212FF34A00E94B20 /* MenuTable */ = {
+			isa = PBXGroup;
+			children = (
+				04F20602212FEA5700E94B20 /* Cell */,
+				04F2060D212FF44C00E94B20 /* MenuTableViewController.swift */,
+				04F2060E212FF44C00E94B20 /* MenuTableViewController.xib */,
+			);
+			name = MenuTable;
+			sourceTree = "<group>";
+		};
+		15213A000E9FC4D3F159C283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0441DDF52126549E0023E22E /* libLGSideMenuController.a */,
+				0441DDF3212654960023E22E /* libDropDown.a */,
+				FD2AC14DAE18FA31B01A1063 /* Pods_TEACHERS_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D223CF5D8A156FB8A58143C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B72CF13F6367AE611A0066 /* Pods-TEACHERS_IOS.debug.xcconfig */,
+				8067575CBF252832AADBC15A /* Pods-TEACHERS_IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049D252221250EB50054214E /* TEACHERS_IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049D254B21250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOS" */;
+			buildPhases = (
+				908CD9E3BAD8F78B13A1DFC1 /* [CP] Check Pods Manifest.lock */,
+				049D251F21250EB50054214E /* Sources */,
+				049D252021250EB50054214E /* Frameworks */,
+				049D252121250EB50054214E /* Resources */,
+				0441DDFE21266CFA0023E22E /* Embed Frameworks */,
+				04F205DD212FA71A00E94B20 /* ShellScript */,
+				662FD4CB29422D74167DF116 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEACHERS_IOS;
+			productName = TEACHERS_IOS;
+			productReference = 049D252321250EB50054214E /* TEACHERS_IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		049D253621250EB50054214E /* TEACHERS_IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049D254E21250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOSTests" */;
+			buildPhases = (
+				049D253321250EB50054214E /* Sources */,
+				049D253421250EB50054214E /* Frameworks */,
+				049D253521250EB50054214E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049D253921250EB50054214E /* PBXTargetDependency */,
+			);
+			name = TEACHERS_IOSTests;
+			productName = TEACHERS_IOSTests;
+			productReference = 049D253721250EB50054214E /* TEACHERS_IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		049D254121250EB50054214E /* TEACHERS_IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049D255121250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOSUITests" */;
+			buildPhases = (
+				049D253E21250EB50054214E /* Sources */,
+				049D253F21250EB50054214E /* Frameworks */,
+				049D254021250EB50054214E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049D254421250EB50054214E /* PBXTargetDependency */,
+			);
+			name = TEACHERS_IOSUITests;
+			productName = TEACHERS_IOSUITests;
+			productReference = 049D254221250EB50054214E /* TEACHERS_IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049D251B21250EB50054214E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jilnesta;
+				TargetAttributes = {
+					049D252221250EB50054214E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					049D253621250EB50054214E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 049D252221250EB50054214E;
+					};
+					049D254121250EB50054214E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 049D252221250EB50054214E;
+					};
+				};
+			};
+			buildConfigurationList = 049D251E21250EB50054214E /* Build configuration list for PBXProject "TEACHERS_IOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049D251A21250EB50054214E;
+			productRefGroup = 049D252421250EB50054214E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049D252221250EB50054214E /* TEACHERS_IOS */,
+				049D253621250EB50054214E /* TEACHERS_IOSTests */,
+				049D254121250EB50054214E /* TEACHERS_IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049D252121250EB50054214E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */,
+				049D256921252D230054214E /* RegisterViewController.xib in Resources */,
+				04F205EC212FB46200E94B20 /* Change_passwordViewController.xib in Resources */,
+				048FA103212E9AFC009CCC62 /* Student_toppageViewController.xib in Resources */,
+				049D2565212520820054214E /* Forgot_passwordViewController.xib in Resources */,
+				048EC3952134DCB400557B28 /* Lesson_reservationTableViewCell.xib in Resources */,
+				04F205F7212FB8B600E94B20 /* Inquiry_ViewController.xib in Resources */,
+				04F205E2212FAA5C00E94B20 /* Student_profile_editViewController.xib in Resources */,
+				04F20601212FBBD500E94B20 /* Lesson_reservationViewController.xib in Resources */,
+				049D253121250EB50054214E /* LaunchScreen.storyboard in Resources */,
+				0422F0182133F96E00939059 /* Nikme in Resources */,
+				04F205F2212FB6E700E94B20 /* Student_SettingViewController.xib in Resources */,
+				04F205FC212FBA2D00E94B20 /* Terms_of_serviceViewController.xib in Resources */,
+				04F20610212FF44C00E94B20 /* MenuTableViewController.xib in Resources */,
+				04F20606212FEB0400E94B20 /* MenuTableTableViewCell.xib in Resources */,
+				049D252E21250EB50054214E /* Assets.xcassets in Resources */,
+				048FA0FE212E8E62009CCC62 /* Register_BackTopViewController.xib in Resources */,
+				049D255E2125104B0054214E /* LoginViewController.xib in Resources */,
+				0421EB65212BC8F20024CACD /* Register_CardIDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D253521250EB50054214E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D254021250EB50054214E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04F205DD212FA71A00E94B20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"\"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-resources.sh\"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-resources.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		662FD4CB29422D74167DF116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908CD9E3BAD8F78B13A1DFC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TEACHERS_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049D251F21250EB50054214E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0422EFE621338CF300939059 /* UITableViewController+EXT.swift in Sources */,
+				049D2564212520820054214E /* Forgot_passwordViewController.swift in Sources */,
+				0422EFEB21339B4700939059 /* BaseViewcontroller.swift in Sources */,
+				0422EFF02133BB2500939059 /* BaseSlider.swift in Sources */,
+				04F20615213006CC00E94B20 /* BaseNavigationViewCotroller.swift in Sources */,
+				04F205FB212FBA2D00E94B20 /* Terms_of_serviceViewController.swift in Sources */,
+				04622B35212BAECF00E3AC5F /* DropDownButton.swift in Sources */,
+				0479E3E7212D462B002D22B7 /* String+ETX.swift in Sources */,
+				0422EFE921338CF300939059 /* Number+EXT.swift in Sources */,
+				04F205E1212FAA5C00E94B20 /* Student_profile_editViewController.swift in Sources */,
+				0421EB5C212BB83C0024CACD /* BoderTextField.swift in Sources */,
+				0422EFE421338CF300939059 /* UIDevice+EXT.swift in Sources */,
+				04884011212EB9A400E2C38B /* BorderUIView.swift in Sources */,
+				04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */,
+				04F20605212FEB0400E94B20 /* MenuTableTableViewCell.swift in Sources */,
+				0421EB5A212BB6530024CACD /* RBGColor.swift in Sources */,
+				0422EFE721338CF300939059 /* UIImage+EXT.swift in Sources */,
+				048FA0FD212E8E62009CCC62 /* Register_BackTopViewController.swift in Sources */,
+				049D255D2125104B0054214E /* LoginViewController.swift in Sources */,
+				04F205F1212FB6E700E94B20 /* Student_SettingViewController.swift in Sources */,
+				0422F0072133CE5A00939059 /* BaseTextField.swift in Sources */,
+				0421EB64212BC8F20024CACD /* Register_CardIDViewController.swift in Sources */,
+				0467C59D212F92760047CA03 /* UIViewController+ETX.swift in Sources */,
+				048EC3942134DCB400557B28 /* Lesson_reservationTableViewCell.swift in Sources */,
+				04622B2B212B9BF000E3AC5F /* DropDownCell.swift in Sources */,
+				04622B30212B9E5900E3AC5F /* DPDKeyboardListener.swift in Sources */,
+				0421EB5F212BC2D00024CACD /* GreenButton.swift in Sources */,
+				0422EFE221338CF300939059 /* Date+EXT.swift in Sources */,
+				0479E3F0212D6B3B002D22B7 /* ValidLabel.swift in Sources */,
+				048EC39A2135018D00557B28 /* CircleImageView.swift in Sources */,
+				04622B31212B9E5900E3AC5F /* DPDUIView+Extension.swift in Sources */,
+				0467C59B212F92130047CA03 /* BackgroundSideViewController.swift in Sources */,
+				04F205E4212FB19700E94B20 /* DisableTextfield.swift in Sources */,
+				0422F00D2133D44900939059 /* PulicStruct.swift in Sources */,
+				0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */,
+				0479E3E2212CFCD6002D22B7 /* DatePickerDialog.swift in Sources */,
+				04F20612212FFD6D00E94B20 /* AppDefines.swift in Sources */,
+				048EC39C2135293400557B28 /* BorderRoundUIView.swift in Sources */,
+				04F2060F212FF44C00E94B20 /* MenuTableViewController.swift in Sources */,
+				04622B29212B9BF000E3AC5F /* DropDown.swift in Sources */,
+				048FA0FA212E87F9009CCC62 /* UserManager.swift in Sources */,
+				04493FBD212E74E000F8A23A /* Date+ETX.swift in Sources */,
+				048FA102212E9AFC009CCC62 /* Student_toppageViewController.swift in Sources */,
+				04622B2A212B9BF000E3AC5F /* DropDown+Appearance.swift in Sources */,
+				049D256C21255B240054214E /* MaxLengthTextfield.swift in Sources */,
+				04F205E7212FB26E00E94B20 /* BaseTextView.swift in Sources */,
+				0422EFFE2133CBEA00939059 /* MapView.swift in Sources */,
+				0488400F212EB82900E2C38B /* RoundConnerUIView.swift in Sources */,
+				04F20600212FBBD500E94B20 /* Lesson_reservationViewController.swift in Sources */,
+				0422EFE321338CF300939059 /* Array+EXT.swift in Sources */,
+				048EC3972134FCC300557B28 /* BoldLabel.swift in Sources */,
+				0479E3E5212D405F002D22B7 /* ValidatedHelper.swift in Sources */,
+				04493FBB212E6B0E00F8A23A /* ServiceDefine.swift in Sources */,
+				048FA105212E9E3D009CCC62 /* WhiteLabel.swift in Sources */,
+				04622B2F212B9E5900E3AC5F /* DPDConstants.swift in Sources */,
+				049D256821252D230054214E /* RegisterViewController.swift in Sources */,
+				04493FC1212E75E000F8A23A /* UIHelper.swift in Sources */,
+				048FA108212EACC9009CCC62 /* UIView+ETX.swift in Sources */,
+				0422EFFC2133CBBD00939059 /* DatePicker.swift in Sources */,
+				0422EFE521338CF300939059 /* Font+EXT.swift in Sources */,
+				049D252721250EB50054214E /* AppDelegate.swift in Sources */,
+				0422EFF32133BCDE00939059 /* BaseSegmentedController.swift in Sources */,
+				04F205F6212FB8B600E94B20 /* Inquiry_ViewController.swift in Sources */,
+				04F205EB212FB46200E94B20 /* Change_passwordViewController.swift in Sources */,
+				0422EFE821338CF300939059 /* UIColor+Ex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D253321250EB50054214E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049D253C21250EB50054214E /* TEACHERS_IOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049D253E21250EB50054214E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049D254721250EB60054214E /* TEACHERS_IOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049D253921250EB50054214E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049D252221250EB50054214E /* TEACHERS_IOS */;
+			targetProxy = 049D253821250EB50054214E /* PBXContainerItemProxy */;
+		};
+		049D254421250EB50054214E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049D252221250EB50054214E /* TEACHERS_IOS */;
+			targetProxy = 049D254321250EB50054214E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		049D252F21250EB50054214E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049D253021250EB50054214E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		049D254921250EB60054214E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		049D254A21250EB60054214E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049D254C21250EB60054214E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B72CF13F6367AE611A0066 /* Pods-TEACHERS_IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
+				INFOPLIST_FILE = TEACHERS_IOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049D254D21250EB60054214E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8067575CBF252832AADBC15A /* Pods-TEACHERS_IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
+				INFOPLIST_FILE = TEACHERS_IOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		049D254F21250EB60054214E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				INFOPLIST_FILE = TEACHERS_IOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEACHERS_IOS.app/TEACHERS_IOS";
+			};
+			name = Debug;
+		};
+		049D255021250EB60054214E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				INFOPLIST_FILE = TEACHERS_IOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEACHERS_IOS.app/TEACHERS_IOS";
+			};
+			name = Release;
+		};
+		049D255221250EB60054214E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				INFOPLIST_FILE = TEACHERS_IOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TEACHERS_IOS;
+			};
+			name = Debug;
+		};
+		049D255321250EB60054214E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BAXH63MW67;
+				INFOPLIST_FILE = TEACHERS_IOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TEACHERS_IOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049D251E21250EB50054214E /* Build configuration list for PBXProject "TEACHERS_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049D254921250EB60054214E /* Debug */,
+				049D254A21250EB60054214E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049D254B21250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049D254C21250EB60054214E /* Debug */,
+				049D254D21250EB60054214E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049D254E21250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049D254F21250EB60054214E /* Debug */,
+				049D255021250EB60054214E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049D255121250EB60054214E /* Build configuration list for PBXNativeTarget "TEACHERS_IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049D255221250EB60054214E /* Debug */,
+				049D255321250EB60054214E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 049D251B21250EB50054214E /* Project object */;
+}
