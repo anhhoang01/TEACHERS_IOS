@@ -53,26 +53,12 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
         })
     }
     @IBAction func actionNext(_ sender: AnyObject) {
-        if checkIsValid() {
-            addProfile()
-            let vc = Register_CardIDViewController.nib()
-            vc.user = self.profile
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        print(datePicked)
-        let formater = DateFormatter()
-        formater.dateFormat = TimeFormat.MONTH_DATE_YEAR_FORMAT
-        btnDatePicker.titleLabel?.text = formater.string(from: datePicked)
-        
+        actionNextButton()
     }
     //MARK: Viewdidload
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = false
-        let arrTextField : [UITextField] = [tfFullname,tfAddress,tfPhoneNumber,tfEmail,tfPassword,tfRepeatPassword]
-        for textfield in arrTextField {
-            textfield.delegate = self
-        }
+        setupUI()
         
     }
     //MARK: -Setup dropdown
@@ -106,6 +92,23 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
                                 self.datePicked  = dt
                                 completion(dt)
                             }
+        }
+    }
+    //MARK: PRIVATE FUNCTION
+    private func setupUI(){
+        self.navigationController?.isNavigationBarHidden = false
+        let arrTextField : [UITextField] = [tfFullname,tfAddress,tfPhoneNumber,tfEmail,tfPassword,tfRepeatPassword]
+        for textfield in arrTextField {
+            textfield.delegate = self
+        }
+        
+    }
+    private func actionNextButton(){
+        if checkIsValid() {
+            addProfile()
+            let vc = Register_CardIDViewController.nib()
+            vc.user = self.profile
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     private func calculateAge (date:Date) {
@@ -214,7 +217,7 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
         profile["pass"] = tfPassword.text?.trim()
     }
     
-    //MARK: TEXTFIELDdelegate
+    //MARK: TEXTFIELD delegate
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let arrTextField : [UITextField] = [tfFullname,tfAddress,tfPhoneNumber,tfEmail,tfPassword,tfRepeatPassword]
         let arrLabel: [UILabel] = [lblFullname,lblAddress,lblPhoneNumber,lblEmail,lblPassword,lblRepeatPassword]
@@ -237,6 +240,19 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
         }        
         return true
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            actionNextButton()
+        }
+        return false
+    }
+    
     
     
     

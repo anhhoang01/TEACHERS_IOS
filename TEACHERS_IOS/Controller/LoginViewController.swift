@@ -11,7 +11,7 @@ enum UserType {
     case Student
     case Teacher
 }
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
 
     
     //MARk: OUTLET
@@ -30,13 +30,13 @@ class LoginViewController: BaseViewController {
     var userType = [String:String]()
     //MARK: ACTION TAPPED
     @IBAction func actionForgot_password(){
+        tfPassword.becomeFirstResponder()
         let vc = Forgot_passwordViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
-       
-        
     }
     
     @IBAction func actionRegister_teacher(){
+        tfPassword.becomeFirstResponder()
         let vc = RegisterViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
         userType["typeUser"] = "1"
@@ -44,29 +44,21 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func actionRegister_student(){
+        tfPassword.becomeFirstResponder()
         let vc = RegisterViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
         userType["typeUser"] = "2"
         vc.profile = self.userType
     }
     @IBAction func actionLogin(){
-        if checkLogin(){
-            let viewcontroller = Student_toppageViewController.nib()
-            let navigation = BaseNavigationController(rootViewController: viewcontroller)
-            let mainviewcontroller = BackgroundSideViewController()
-            mainviewcontroller.rootViewController = navigation
-            mainviewcontroller.setupMenu()
-            if let window = UIApplication.shared.keyWindow {
-                window.rootViewController = mainviewcontroller
-                kRootViewController = mainviewcontroller
-                
-            }
-        }
+        loginUser()
     }
     //MARK: PRIVATE FUNC
     private func setupUI(){
         self.navigationController?.isNavigationBarHidden = true
         lblLogo.text = "MANABU /NKUN"
+        tfEmail.delegate = self
+        tfPassword.delegate = self
     }
     private func checkLogin() -> Bool{
         if (tfEmail.text == "") {
@@ -85,7 +77,31 @@ class LoginViewController: BaseViewController {
         }        
         return false
     }
-    
-    
-    
+    private func loginUser(){
+        if checkLogin(){
+            let viewcontroller = Student_toppageViewController.nib()
+            let navigation = BaseNavigationController(rootViewController: viewcontroller)
+            let mainviewcontroller = BackgroundSideViewController()
+            mainviewcontroller.rootViewController = navigation
+            mainviewcontroller.setupMenu()
+            if let window = UIApplication.shared.keyWindow {
+                window.rootViewController = mainviewcontroller
+                kRootViewController = mainviewcontroller
+                
+            }
+        }
+    }
+    //MARK: Textfield degelate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+            loginUser()
+        }
+        return false
+    }
 }
