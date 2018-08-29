@@ -59,6 +59,15 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         lblLogo.text = "MANABU /NKUN"
         tfEmail.delegate = self
         tfPassword.delegate = self
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
+        
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+    }
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     private func checkLogin() -> Bool{
         if (tfEmail.text == "") {
