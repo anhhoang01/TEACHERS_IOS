@@ -47,7 +47,7 @@ class MenuTableViewController: BaseViewController , UITableViewDelegate, UITable
         setupStudentList()
     }
     
-    //MARK: tableview
+    //MARK: tableview --
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrTitleMenu.count
     }
