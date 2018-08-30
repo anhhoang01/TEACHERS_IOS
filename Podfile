@@ -8,6 +8,8 @@ target 'TEACHERS_IOS' do
     pod 'PureLayout', '~> 3.1'
     pod 'MagicalRecord', '~> 2.3.2'
     pod 'Cosmos', '~> 16.0'
+    pod 'TPKeyboardAvoiding', '~> 1.3.1'
+    pod 'ExpandableCell', '~> 1.2.3'
 end
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

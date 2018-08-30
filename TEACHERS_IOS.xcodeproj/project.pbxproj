@@ -43,6 +43,8 @@
 		04622B35212BAECF00E3AC5F /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B34212BAECF00E3AC5F /* DropDownButton.swift */; };
 		0467C59B212F92130047CA03 /* BackgroundSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467C59A212F92130047CA03 /* BackgroundSideViewController.swift */; };
 		0467C59D212F92760047CA03 /* UIViewController+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467C59C212F92760047CA03 /* UIViewController+ETX.swift */; };
+		04720B182137D65C00764888 /* Student_RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04720B162137D65C00764888 /* Student_RegisterViewController.swift */; };
+		04720B192137D65C00764888 /* Student_RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04720B172137D65C00764888 /* Student_RegisterViewController.xib */; };
 		0479E3E2212CFCD6002D22B7 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E1212CFCD6002D22B7 /* DatePickerDialog.swift */; };
 		0479E3E5212D405F002D22B7 /* ValidatedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */; };
 		0479E3E7212D462B002D22B7 /* String+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479E3E6212D462B002D22B7 /* String+ETX.swift */; };
@@ -70,8 +72,8 @@
 		049D255E2125104B0054214E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D255C2125104B0054214E /* LoginViewController.xib */; };
 		049D2564212520820054214E /* Forgot_passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D2562212520820054214E /* Forgot_passwordViewController.swift */; };
 		049D2565212520820054214E /* Forgot_passwordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D2563212520820054214E /* Forgot_passwordViewController.xib */; };
-		049D256821252D230054214E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D256621252D230054214E /* RegisterViewController.swift */; };
-		049D256921252D230054214E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D256721252D230054214E /* RegisterViewController.xib */; };
+		049D256821252D230054214E /* Teacher_RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D256621252D230054214E /* Teacher_RegisterViewController.swift */; };
+		049D256921252D230054214E /* Teacher_RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049D256721252D230054214E /* Teacher_RegisterViewController.xib */; };
 		049D256C21255B240054214E /* MaxLengthTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D256B21255B240054214E /* MaxLengthTextfield.swift */; };
 		04F205E1212FAA5C00E94B20 /* Student_profile_editViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F205DF212FAA5C00E94B20 /* Student_profile_editViewController.swift */; };
 		04F205E2212FAA5C00E94B20 /* Student_profile_editViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F205E0212FAA5C00E94B20 /* Student_profile_editViewController.xib */; };
@@ -165,6 +167,8 @@
 		04622B34212BAECF00E3AC5F /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 		0467C59A212F92130047CA03 /* BackgroundSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSideViewController.swift; sourceTree = "<group>"; };
 		0467C59C212F92760047CA03 /* UIViewController+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ETX.swift"; sourceTree = "<group>"; };
+		04720B162137D65C00764888 /* Student_RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_RegisterViewController.swift; sourceTree = "<group>"; };
+		04720B172137D65C00764888 /* Student_RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_RegisterViewController.xib; sourceTree = "<group>"; };
 		0479E3E1212CFCD6002D22B7 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedHelper.swift; sourceTree = "<group>"; };
 		0479E3E6212D462B002D22B7 /* String+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ETX.swift"; sourceTree = "<group>"; };
@@ -198,8 +202,8 @@
 		049D255C2125104B0054214E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		049D2562212520820054214E /* Forgot_passwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgot_passwordViewController.swift; sourceTree = "<group>"; };
 		049D2563212520820054214E /* Forgot_passwordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Forgot_passwordViewController.xib; sourceTree = "<group>"; };
-		049D256621252D230054214E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		049D256721252D230054214E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		049D256621252D230054214E /* Teacher_RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher_RegisterViewController.swift; sourceTree = "<group>"; };
+		049D256721252D230054214E /* Teacher_RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Teacher_RegisterViewController.xib; sourceTree = "<group>"; };
 		049D256B21255B240054214E /* MaxLengthTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthTextfield.swift; sourceTree = "<group>"; };
 		04F205DF212FAA5C00E94B20 /* Student_profile_editViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_profile_editViewController.swift; sourceTree = "<group>"; };
 		04F205E0212FAA5C00E94B20 /* Student_profile_editViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_profile_editViewController.xib; sourceTree = "<group>"; };
@@ -407,6 +411,24 @@
 			name = LGSlideMenuController;
 			sourceTree = "<group>";
 		};
+		04720B142137D1CF00764888 /* Teacher_Register */ = {
+			isa = PBXGroup;
+			children = (
+				049D256621252D230054214E /* Teacher_RegisterViewController.swift */,
+				049D256721252D230054214E /* Teacher_RegisterViewController.xib */,
+			);
+			name = Teacher_Register;
+			sourceTree = "<group>";
+		};
+		04720B152137D1FE00764888 /* Student_Register */ = {
+			isa = PBXGroup;
+			children = (
+				04720B162137D65C00764888 /* Student_RegisterViewController.swift */,
+				04720B172137D65C00764888 /* Student_RegisterViewController.xib */,
+			);
+			path = Student_Register;
+			sourceTree = "<group>";
+		};
 		0479E3DD212CEE66002D22B7 /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,7 +599,7 @@
 				04F205EE212FB6C300E94B20 /* 13.Student_setting */,
 				04F205DE212FA9D700E94B20 /* 12.Student_profile_edit */,
 				048FA0FF212E9AA1009CCC62 /* 4.Student_toppage */,
-				049D255F212520230054214E /* Register */,
+				049D255F212520230054214E /* 2.Register */,
 				049D255A2125102D0054214E /* 1.Login */,
 			);
 			path = Controller;
@@ -611,17 +633,17 @@
 			name = 1.Login;
 			sourceTree = "<group>";
 		};
-		049D255F212520230054214E /* Register */ = {
+		049D255F212520230054214E /* 2.Register */ = {
 			isa = PBXGroup;
 			children = (
-				049D256621252D230054214E /* RegisterViewController.swift */,
-				049D256721252D230054214E /* RegisterViewController.xib */,
+				04720B152137D1FE00764888 /* Student_Register */,
+				04720B142137D1CF00764888 /* Teacher_Register */,
 				0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */,
 				0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */,
 				048FA0FB212E8E62009CCC62 /* Register_BackTopViewController.swift */,
 				048FA0FC212E8E62009CCC62 /* Register_BackTopViewController.xib */,
 			);
-			path = Register;
+			path = 2.Register;
 			sourceTree = "<group>";
 		};
 		049D25612125204A0054214E /* Forgot_Password */ = {
@@ -867,7 +889,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */,
-				049D256921252D230054214E /* RegisterViewController.xib in Resources */,
+				049D256921252D230054214E /* Teacher_RegisterViewController.xib in Resources */,
 				04F205EC212FB46200E94B20 /* Change_passwordViewController.xib in Resources */,
 				048FA103212E9AFC009CCC62 /* Student_toppageViewController.xib in Resources */,
 				049D2565212520820054214E /* Forgot_passwordViewController.xib in Resources */,
@@ -883,6 +905,7 @@
 				04F20606212FEB0400E94B20 /* MenuTableTableViewCell.xib in Resources */,
 				049D252E21250EB50054214E /* Assets.xcassets in Resources */,
 				048FA0FE212E8E62009CCC62 /* Register_BackTopViewController.xib in Resources */,
+				04720B192137D65C00764888 /* Student_RegisterViewController.xib in Resources */,
 				049D255E2125104B0054214E /* LoginViewController.xib in Resources */,
 				0421EB65212BC8F20024CACD /* Register_CardIDViewController.xib in Resources */,
 			);
@@ -928,16 +951,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1024,8 +1051,9 @@
 				04493FBB212E6B0E00F8A23A /* ServiceDefine.swift in Sources */,
 				048FA105212E9E3D009CCC62 /* WhiteLabel.swift in Sources */,
 				04622B2F212B9E5900E3AC5F /* DPDConstants.swift in Sources */,
-				049D256821252D230054214E /* RegisterViewController.swift in Sources */,
+				049D256821252D230054214E /* Teacher_RegisterViewController.swift in Sources */,
 				04493FC1212E75E000F8A23A /* UIHelper.swift in Sources */,
+				04720B182137D65C00764888 /* Student_RegisterViewController.swift in Sources */,
 				048FA108212EACC9009CCC62 /* UIView+ETX.swift in Sources */,
 				0422EFFC2133CBBD00939059 /* DatePicker.swift in Sources */,
 				0422EFE521338CF300939059 /* Font+EXT.swift in Sources */,

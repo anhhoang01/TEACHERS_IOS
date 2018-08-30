@@ -25,30 +25,39 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         setupUI()
         
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
     //MARK: PROPERTIES
     var userType = [String:String]()
+    var arrTextfield : [UITextField] = []
     //MARK: ACTION TAPPED
     @IBAction func actionForgot_password(){
-        tfPassword.becomeFirstResponder()
+        arrTextfield.enumerated().forEach{
+            $0.element.resignFirstResponder()
+        }
         let vc = Forgot_passwordViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func actionRegister_teacher(){
-        tfPassword.becomeFirstResponder()
-        let vc = RegisterViewController.nib()
+        arrTextfield.enumerated().forEach{
+            $0.element.resignFirstResponder()
+        }
+        let vc = Teacher_RegisterViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
         userType["typeUser"] = "1"
         vc.profile = self.userType
     }
     
     @IBAction func actionRegister_student(){
-        tfPassword.becomeFirstResponder()
-        let vc = RegisterViewController.nib()
+        arrTextfield.enumerated().forEach{
+            $0.element.resignFirstResponder()
+        }
+        let vc = Student_RegisterViewController.nib()
         self.navigationController?.pushViewController(vc, animated: true)
         userType["typeUser"] = "2"
-        vc.profile = self.userType
+        //vc.profile = self.userType
     }
     @IBAction func actionLogin(){
         loginUser()
@@ -57,13 +66,15 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     private func setupUI(){
         self.navigationController?.isNavigationBarHidden = true
         lblLogo.text = "MANABU /NKUN"
-        tfEmail.delegate = self
-        tfPassword.delegate = self
+        arrTextfield.append(tfEmail)
+        arrTextfield.append(tfPassword)
+        arrTextfield.enumerated().forEach{
+            $0.element.delegate = self
+        }
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         
-        
+        // --cancel touch when tap in view 
         tap.cancelsTouchesInView = false
-        
         view.addGestureRecognizer(tap)
     }
     @objc private func dismissKeyboard() {

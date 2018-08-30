@@ -8,29 +8,49 @@
 
 import UIKit
 
-class RegisterViewController: BaseViewController , UITextFieldDelegate{
+class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
     
     //MARK: - Outlet ..
-    @IBOutlet weak var lblFullname: UILabel!
-    @IBOutlet weak var tfFullname: UITextField!
+    @IBOutlet weak var lblLastName: UILabel!
+    @IBOutlet weak var lblFirstName: UILabel!
+    @IBOutlet weak var lblLastNameEng: UILabel!
+    @IBOutlet weak var lblFirstNameEng: UILabel!
+    @IBOutlet weak var lblOrtherName: UILabel!
+    @IBOutlet weak var lblOrtherAddress: UILabel!
+    @IBOutlet weak var lblOrtherPhoneNumber: UILabel!
     @IBOutlet weak var lblLanguageLevel: UILabel!
-    @IBOutlet weak var btnLanguageLevel: UIButton!
     @IBOutlet weak var lblSex: UILabel!
-    @IBOutlet weak var btnSex: UIButton!
     @IBOutlet weak var lblDatePicker: UILabel!
-    @IBOutlet weak var btnDatePicker: UIButton!
-    @IBOutlet weak var tfAge: UITextField!
     @IBOutlet weak var lblAddress: UILabel!
-    @IBOutlet weak var tfAddress: UITextField!
     @IBOutlet weak var lblPhoneNumber: UILabel!
-    @IBOutlet weak var tfPhoneNumber: UITextField!
     @IBOutlet weak var lblEmail: UILabel!
-    @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var lblPassword: UILabel!
-    @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var lblRepeatPassword: UILabel!
+    @IBOutlet weak var lblAvatar: UILabel!
+    
+    @IBOutlet weak var btnSex: UIButton!
+    @IBOutlet weak var btnType: UIButton!
+    @IBOutlet weak var btnDatePicker: UIButton!
+    @IBOutlet weak var btnLanguageLevel: UIButton!
+    
+    @IBOutlet weak var tfLastName: UITextField!
+    @IBOutlet weak var tfFirstName: UITextField!
+    @IBOutlet weak var tfLastNameEng: UITextField!
+    @IBOutlet weak var tfFirstNameEng: UITextField!
+    @IBOutlet weak var tfOrtherName: UITextField!
+    @IBOutlet weak var tfOrtherAddress: UITextField!
+    @IBOutlet weak var tfOrtherPhoneNumber: UITextField!
+    @IBOutlet weak var tfJob: UITextField!
+    @IBOutlet weak var tfAge: UITextField!
+    @IBOutlet weak var tfAddress: UITextField!
+    @IBOutlet weak var tfPhoneNumber: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfRepeatPassword: UITextField!
+    
+    @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var LanguageLevelView: UIView!
+
     //MARK: Propertie
     private var datePicked = Date()
     var profile = [String:String]()
@@ -54,6 +74,9 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     }
     @IBAction func actionNext(_ sender: AnyObject) {
         actionNextButton()
+    }
+    @IBAction func actionType (_ sender: AnyObject) {
+        self.setupDropdown(dataSource: ["FaceBook", "広告", "TVCM", "知人の紹介","その他"], setLayout: btnType)
     }
     //MARK: Viewdidload
     override func viewDidLoad() {
@@ -97,11 +120,20 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     //MARK: PRIVATE FUNCTION
     private func setupUI(){
         self.navigationController?.isNavigationBarHidden = false
-        let arrTextField : [UITextField] = [tfFullname,tfAddress,tfPhoneNumber,tfEmail,tfPassword,tfRepeatPassword]
-        for textfield in arrTextField {
-            textfield.delegate = self
-        }
         
+        let arrTextField : [UITextField] = [tfLastName,tfFirstName,tfLastName,tfFirstNameEng,tfJob,tfAddress,tfPhoneNumber,tfEmail,tfOrtherName,tfOrtherAddress,tfOrtherPhoneNumber,tfPassword,tfRepeatPassword]
+        arrTextField.enumerated().forEach{
+            $0.element.delegate = self
+        }
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
+        // --cancel touch when tap in view
+        //tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+        
+    }
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     private func actionNextButton(){
         if checkIsValid() {
@@ -126,9 +158,9 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     
     private func checkIsValid() -> Bool{
         // k cho số điện thoại nhập chữ , kí tự đặc biệt -- e mail phải có @ -- k cho pass nhập kí tự đặc biệt -- re pass k cho nhập kí tự đặc biệt
-        if tfFullname.text == "" {
-            lblFullname.text = "確認してください。"
-            lblFullname.textColor = UIColor.red
+        if tfLastName.text == "" {
+            lblLastName.text = "確認してください。"
+            lblLastName.textColor = UIColor.red
             return false
         }else if btnLanguageLevel.titleLabel?.text == "選択してください" {
             lblLanguageLevel.text = "確認してください。language"
@@ -198,7 +230,7 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     
     private func getDefaultLabel(){
         // xử dụng khi click vào textfield nào thì label đó reset
-        let arrLabel: [UILabel] = [lblFullname,lblLanguageLevel,lblSex,lblDatePicker,lblAddress,lblPhoneNumber,lblEmail,lblPassword,lblRepeatPassword]
+        let arrLabel: [UILabel] = [lblAvatar,lblLastName,lblFirstName,lblLastNameEng,lblFirstNameEng,lblLanguageLevel,lblSex,lblDatePicker,lblAddress,lblPhoneNumber,lblEmail,lblOrtherName,lblOrtherAddress,lblOrtherPhoneNumber,lblPassword,lblRepeatPassword]
         let arrText = ["名前","日本語レベル","性別","生年月日","年齢","住所","電話番号","メールアドレス","パスワード","パスワード確認"]
         arrLabel.enumerated().forEach { arg in
             arg.element.text = arrText[arg.offset]
@@ -206,7 +238,10 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
         }
     }
     private func addProfile() {
-        profile["fullname"] = tfFullname.text?.trim()
+        profile["lastname"] = tfLastName.text?.trim()
+        profile["firstname"] = tfFirstName.text?.trim()
+        profile["lastnameEng"] = tfLastNameEng.text?.trim()
+        profile["firstnameEng"] = tfFirstNameEng.text?.trim()
         profile["languageLevel"] = btnLanguageLevel.titleLabel!.text!.trim()
         profile["sex"] = btnSex.titleLabel?.text?.trim()
         profile["birthday"] = btnDatePicker.titleLabel?.text?.trim()
@@ -219,9 +254,9 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     
     //MARK: TEXTFIELD delegate
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        let arrTextField : [UITextField] = [tfFullname,tfAddress,tfPhoneNumber,tfEmail,tfPassword,tfRepeatPassword]
-        let arrLabel: [UILabel] = [lblFullname,lblAddress,lblPhoneNumber,lblEmail,lblPassword,lblRepeatPassword]
-        let arrText = ["名前","住所","電話番号","メールアドレス","パスワード","パスワード確認"]
+        let arrTextField : [UITextField] = [tfLastName,tfFirstName,tfLastNameEng,tfFirstNameEng,tfAddress,tfPhoneNumber,tfEmail,tfOrtherName,tfOrtherAddress,tfOrtherPhoneNumber,tfPassword,tfRepeatPassword]
+        let arrLabel: [UILabel] = [lblLastName,lblFirstName,lblLastNameEng,lblFirstNameEng,lblAddress,lblPhoneNumber,lblEmail,lblOrtherName,lblOrtherAddress,lblOrtherPhoneNumber,lblPassword,lblRepeatPassword]
+        let arrText = ["名字","名前","英語名字","英語名前","住所","電話番号","メールアドレス","その他連絡先名前","その他連絡先住所","その他連絡先電話番号","パスワード","パスワード確認"]
         for i in 0..<arrTextField.count {
             if textField == arrTextField[i] {
                 arrLabel[i].text = arrText[i]
@@ -234,7 +269,7 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
             return true
         }
         if (textField == self.tfPhoneNumber) {
-            let allowedCharacters = CharacterSet(charactersIn:"0123456789 ")
+            let allowedCharacters = CharacterSet(charactersIn:"0123456789")
             let characterSet = CharacterSet(charactersIn: string)
             return allowedCharacters.isSuperset(of: characterSet)
         }        
@@ -242,13 +277,13 @@ class RegisterViewController: BaseViewController , UITextFieldDelegate{
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
+        
         // Try to find next responder
         if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
             nextField.becomeFirstResponder()
         } else {
             // Not found, so remove keyboard.
             textField.resignFirstResponder()
-            actionNextButton()
         }
         return false
     }
