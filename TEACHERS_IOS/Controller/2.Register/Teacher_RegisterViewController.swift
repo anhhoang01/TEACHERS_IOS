@@ -27,6 +27,7 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
     @IBOutlet weak var lblPassword: UILabel!
     @IBOutlet weak var lblRepeatPassword: UILabel!
     @IBOutlet weak var lblAvatar: UILabel!
+    @IBOutlet weak var lblJob: UILabel!
     
     @IBOutlet weak var btnSex: UIButton!
     @IBOutlet weak var btnType: UIButton!
@@ -53,7 +54,7 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
 
     //MARK: Propertie
     private var datePicked = Date()
-    var profile = [String:String]()
+    var profile : [String:String] = [:]
     //MARK: - Action tapped
     @IBAction func actionLanguageLevel(_ sender: AnyObject) {
         lblLanguageLevel.text = "日本語レベル"
@@ -62,12 +63,12 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
     }
     @IBAction func actionSex(_ sender: AnyObject) {
         lblSex.text = "性別"
-        lblSex.textColor = UIColor.black
+        lblSex.textColor = .black
         self.setupDropdown(dataSource: ["男","女"], setLayout: btnSex)
     }
     @IBAction func actionDatePicker(_ sender: AnyObject) {
         lblDatePicker.text = "生年月日"
-        lblDatePicker.textColor = UIColor.black
+        lblDatePicker.textColor = .black
         datePickerTapped(animated: true, completion: { [weak self] date in
             self?.calculateAge(date: date)
         })
@@ -76,6 +77,8 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
         actionNextButton()
     }
     @IBAction func actionType (_ sender: AnyObject) {
+        lblJob.text = "住所"
+        lblJob.textColor = .black
         self.setupDropdown(dataSource: ["FaceBook", "広告", "TVCM", "知人の紹介","その他"], setLayout: btnType)
     }
     //MARK: Viewdidload
@@ -128,7 +131,7 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         
         // --cancel touch when tap in view
-        //tap.cancelsTouchesInView = false
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
     }
@@ -158,23 +161,35 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
     
     private func checkIsValid() -> Bool{
         // k cho số điện thoại nhập chữ , kí tự đặc biệt -- e mail phải có @ -- k cho pass nhập kí tự đặc biệt -- re pass k cho nhập kí tự đặc biệt
-        if tfLastName.text == "" {
+        if (tfLastName.text?.trim().isEmpty)! {
             lblLastName.text = "確認してください。"
             lblLastName.textColor = UIColor.red
             return false
-        }else if btnLanguageLevel.titleLabel?.text == "選択してください" {
+        }else if (tfFirstName.text?.trim().isEmpty)! {
+            lblFirstName.text = "確認してください。"
+            lblFirstName.textColor = .red
+            return false
+        }else if (tfFirstName.text?.trim().isEmpty)! {
+            lblLastNameEng.text = "確認してください。"
+            lblLastNameEng.textColor = .red
+            return false
+        }else if (tfFirstName.text?.trim().isEmpty)! {
+            lblFirstNameEng.text = "確認してください。"
+            lblFirstNameEng.textColor = .red
+            return false
+        }else if btnLanguageLevel.titleLabel?.text?.trim() == "選択してください" {
             lblLanguageLevel.text = "確認してください。language"
             lblLanguageLevel.textColor = UIColor.red
             return false
-        }else if btnSex.titleLabel?.text == "選択してください" {
+        }else if btnSex.titleLabel?.text?.trim() == "選択してください" {
             lblSex.text = "確認してください。sex"
             lblSex.textColor = UIColor.red
             return false
-        }else if btnDatePicker.titleLabel?.text == "選択してください" {
+        }else if btnDatePicker.titleLabel?.text?.trim() == "選択してください" {
             lblDatePicker.text = "確認してください。date"
             lblDatePicker.textColor = UIColor.red
             return false
-        }else if tfAddress.text == "" {
+        }else if (tfAddress.text?.trim().isEmpty)! {
             lblAddress.text = "確認してください。address"
             lblAddress.textColor = UIColor.red
             return false
@@ -228,35 +243,30 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
         return true
     }
     
-    private func getDefaultLabel(){
-        // xử dụng khi click vào textfield nào thì label đó reset
-        let arrLabel: [UILabel] = [lblAvatar,lblLastName,lblFirstName,lblLastNameEng,lblFirstNameEng,lblLanguageLevel,lblSex,lblDatePicker,lblAddress,lblPhoneNumber,lblEmail,lblOrtherName,lblOrtherAddress,lblOrtherPhoneNumber,lblPassword,lblRepeatPassword]
-        let arrText = ["名前","日本語レベル","性別","生年月日","年齢","住所","電話番号","メールアドレス","パスワード","パスワード確認"]
-        arrLabel.enumerated().forEach { arg in
-            arg.element.text = arrText[arg.offset]
-            arg.element.textColor = UIColor.black
-        }
-    }
     private func addProfile() {
         profile["lastname"] = tfLastName.text?.trim()
         profile["firstname"] = tfFirstName.text?.trim()
         profile["lastnameEng"] = tfLastNameEng.text?.trim()
         profile["firstnameEng"] = tfFirstNameEng.text?.trim()
+        profile["job"] = tfJob.text?.trim()
         profile["languageLevel"] = btnLanguageLevel.titleLabel!.text!.trim()
         profile["sex"] = btnSex.titleLabel?.text?.trim()
         profile["birthday"] = btnDatePicker.titleLabel?.text?.trim()
-        profile["age"] = tfAge.text?.trim()
+        profile["job"] = tfJob.text?.trim()
         profile["address"] = tfAddress.text?.trim()
         profile["phonenumber"] = tfPhoneNumber.text?.trim()
         profile["email"] = tfEmail.text?.trim()
+        profile["ortherName"] = tfOrtherName.text?.trim()
+        profile["ortherAddress"] = tfOrtherAddress.text?.trim()
+        profile["ortherphonenumber"] = tfOrtherPhoneNumber.text?.trim()
         profile["pass"] = tfPassword.text?.trim()
     }
     
     //MARK: TEXTFIELD delegate
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        let arrTextField : [UITextField] = [tfLastName,tfFirstName,tfLastNameEng,tfFirstNameEng,tfAddress,tfPhoneNumber,tfEmail,tfOrtherName,tfOrtherAddress,tfOrtherPhoneNumber,tfPassword,tfRepeatPassword]
-        let arrLabel: [UILabel] = [lblLastName,lblFirstName,lblLastNameEng,lblFirstNameEng,lblAddress,lblPhoneNumber,lblEmail,lblOrtherName,lblOrtherAddress,lblOrtherPhoneNumber,lblPassword,lblRepeatPassword]
-        let arrText = ["名字","名前","英語名字","英語名前","住所","電話番号","メールアドレス","その他連絡先名前","その他連絡先住所","その他連絡先電話番号","パスワード","パスワード確認"]
+        let arrTextField : [UITextField] = [tfLastName,tfFirstName,tfLastNameEng,tfFirstNameEng,tfJob,tfAddress,tfPhoneNumber,tfEmail,tfOrtherName,tfOrtherAddress,tfOrtherPhoneNumber,tfPassword,tfRepeatPassword]
+        let arrLabel: [UILabel] = [lblLastName,lblFirstName,lblLastNameEng,lblFirstNameEng,lblJob,lblAddress,lblPhoneNumber,lblEmail,lblOrtherName,lblOrtherAddress,lblOrtherPhoneNumber,lblPassword,lblRepeatPassword]
+        let arrText = ["名字","名前","英語名字","英語名前","住所","住所","電話番号","メールアドレス","その他連絡先名前","その他連絡先住所","その他連絡先電話番号","パスワード","パスワード確認"]
         for i in 0..<arrTextField.count {
             if textField == arrTextField[i] {
                 arrLabel[i].text = arrText[i]
@@ -279,16 +289,12 @@ class Teacher_RegisterViewController: BaseViewController , UITextFieldDelegate{
     {
         
         // Try to find next responder
-        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
-            nextField.becomeFirstResponder()
-        } else {
+//        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+//            nextField.becomeFirstResponder()
+//        } else {
             // Not found, so remove keyboard.
             textField.resignFirstResponder()
-        }
+//        }
         return false
     }
-    
-    
-    
-    
 }

@@ -81,21 +81,24 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     private func checkLogin() -> Bool{
-        if (tfEmail.text == "") {
-            return false
-        }else if tfPassword.text == ""{
-            return false
-        }else {
+        if checkVaild() {
             //call api
             //user.email = tfemail.text user.pass = tfpass.text
             //completion
-            if (tfEmail.text == "abc" && tfPassword.text == "123"){
-                kUserDefault.set(true, forKey: kuser)
-                
-                return true
-            }
+            kUserDefault.set(true, forKey: kuser)
+            return true
         }        
         return false
+    }
+    private func checkVaild() -> Bool{
+        if (tfEmail.text?.trim().isEmpty)! {
+            
+            return false
+        }else if (tfPassword.text?.trim().isEmpty)! {
+            
+            return false
+        }
+        return true
     }
     private func loginUser(){
         if checkLogin(){
@@ -107,7 +110,6 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
             if let window = UIApplication.shared.keyWindow {
                 window.rootViewController = mainviewcontroller
                 kRootViewController = mainviewcontroller
-                
             }
         }
     }

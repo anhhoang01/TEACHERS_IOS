@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Teacher_RegisterViewController" customModule="TEACHERS_IOS" customModuleProvider="target">
             <connections>
@@ -31,6 +26,7 @@
                 <outlet property="lblEmail" destination="MaC-79-hve" id="o3p-bz-d2G"/>
                 <outlet property="lblFirstName" destination="5c5-H4-d3n" id="Utz-sE-uKb"/>
                 <outlet property="lblFirstNameEng" destination="FBr-Um-xfV" id="aac-hN-76X"/>
+                <outlet property="lblJob" destination="JrA-2h-Z3b" id="nEs-xB-ypu"/>
                 <outlet property="lblLanguageLevel" destination="0J4-Jv-9J0" id="k7w-MD-a1j"/>
                 <outlet property="lblLastName" destination="Vv4-p9-PPE" id="BDp-fJ-dPk"/>
                 <outlet property="lblLastNameEng" destination="gvB-G4-Sur" id="q0z-aA-zXz"/>
@@ -48,7 +44,7 @@
                 <outlet property="tfFirstNameEng" destination="hJQ-2A-N77" id="6vM-QV-kWu"/>
                 <outlet property="tfJob" destination="Yg9-rc-xEV" id="qMD-zR-nb6"/>
                 <outlet property="tfLastName" destination="Cg3-wC-cxZ" id="I5L-7l-gWd"/>
-                <outlet property="tfLastNameEng" destination="avc-d9-C8H" id="EYg-4Y-cYj"/>
+                <outlet property="tfLastNameEng" destination="avc-d9-C8H" id="eKK-Oz-BX6"/>
                 <outlet property="tfOrtherAddress" destination="j8U-qN-ODA" id="DoN-bV-RWy"/>
                 <outlet property="tfOrtherName" destination="Rrw-uj-8hI" id="Dgv-AP-OWT"/>
                 <outlet property="tfOrtherPhoneNumber" destination="dAJ-Yu-DAd" id="JZK-62-PeR"/>
@@ -111,7 +107,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="50"/>
@@ -129,7 +125,7 @@
                                         <constraint firstItem="Cg3-wC-cxZ" firstAttribute="leading" secondItem="EZ3-Ee-c4p" secondAttribute="leading" id="xdr-Np-d20"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icU-8e-Kda" userLabel="First Name">
+                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icU-8e-Kda" userLabel="First Name">
                                     <rect key="frame" x="20" y="282" width="335" height="99"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-H4-d3n">
@@ -145,7 +141,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="50"/>
@@ -179,7 +175,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="50"/>
@@ -394,7 +390,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="200"/>
@@ -428,7 +424,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="200"/>
@@ -462,7 +458,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="15"/>
@@ -496,7 +492,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="100"/>
@@ -530,7 +526,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="100"/>
@@ -564,7 +560,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="100"/>
@@ -668,7 +664,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="16"/>
@@ -702,7 +698,7 @@
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
                                                     <integer key="value" value="16"/>
