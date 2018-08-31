@@ -7,16 +7,13 @@
 //
 
 import UIKit
+import GooglePlaces
 
 class Lesson_reservationViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        heightViewSearch.constant = 0
-        tableView.register(Lesson_reservationTableViewCell.self)
-        tableView.delegate = self
-        tableView.dataSource = self
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Right", style: .plain, target: self, action: #selector(actionShowSearch(_:)))
+        setupUI()
     }
     
     //MARK: OUTLET
@@ -33,8 +30,18 @@ class Lesson_reservationViewController: BaseViewController {
             self?.lblDatePicker.text = formater.string(from: (self?.datePicked)!)
         })
     }
-    
-    //MARK: -Setup Datepicker
+    @IBAction func actionSearch(_ sender: AnyObject) {
+        
+    }
+    //MARK: PRIVATE FUNCTION
+    private func setupUI(){
+        heightViewSearch.constant = 0
+        tableView.register(Lesson_reservationTableViewCell.self)
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Right", style: .plain, target: self, action: #selector(actionShowSearch(_:)))
+    }
+    //MARK: SETUP DATEPICKER
     private func datePickerTapped(animated flag: Bool, completion: @escaping (_ date: Date) -> Void) {
         let minDate = Date(dateString: "12/27/1900")
         var dateComponents = DateComponents()
@@ -57,7 +64,7 @@ class Lesson_reservationViewController: BaseViewController {
         }
     }
     @objc private func actionShowSearch(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
+       
         
     }
     
@@ -78,5 +85,5 @@ extension Lesson_reservationViewController : UITableViewDataSource , UITableView
         return UITableViewAutomaticDimension
     }
    
-    
 }
+

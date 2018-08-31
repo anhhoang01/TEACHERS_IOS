@@ -37,6 +37,11 @@ let kBlueColor                          = UIColor(hex: "0FC0EA")
 let kVioletColor                        = UIColor(hex: "B376FF")
 let kRedColor                           = UIColor(hex: "e53935")
 let kLightGrayColor                     = UIColor.lightGray
+let kGreenLine                          = UIColor(hex: "A5BCA8")
+let kDarkGray                           = UIColor(hex: "EBEBEB")
+let kDrakGrayBoder                      = UIColor(hex: "424242")
+let kGreenBackGroundButton              = UIColor(hex: "62BE4D")
+let kDarkGrayBackGroundDisableTextfield = UIColor(hex: "D3D3D3")
 //let ServiceUrl                          =
 
 //user default key

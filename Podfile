@@ -10,6 +10,9 @@ target 'TEACHERS_IOS' do
     pod 'Cosmos', '~> 16.0'
     pod 'TPKeyboardAvoiding', '~> 1.3.1'
     pod 'ExpandableCell', '~> 1.2.3'
+    pod 'GoogleMaps', '~> 2.1'
+    pod 'GooglePlaces', '~> 2.1'
+    pod 'Alamofire'
 end
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

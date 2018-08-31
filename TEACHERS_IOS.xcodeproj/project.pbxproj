@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0421EB5A212BB6530024CACD /* RBGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB59212BB6530024CACD /* RBGColor.swift */; };
 		0421EB5C212BB83C0024CACD /* BoderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB5B212BB83C0024CACD /* BoderTextField.swift */; };
 		0421EB5F212BC2D00024CACD /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB5E212BC2D00024CACD /* GreenButton.swift */; };
 		0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB60212BC5490024CACD /* WhiteButton.swift */; };
@@ -129,7 +128,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0421EB59212BB6530024CACD /* RBGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBGColor.swift; sourceTree = "<group>"; };
 		0421EB5B212BB83C0024CACD /* BoderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoderTextField.swift; path = ../Custom/BoderTextField.swift; sourceTree = "<group>"; };
 		0421EB5E212BC2D00024CACD /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
 		0421EB60212BC5490024CACD /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
@@ -256,14 +254,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0421EB58212BB63B0024CACD /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				0421EB59212BB6530024CACD /* RBGColor.swift */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
 		0421EB5D212BB8440024CACD /* Textfield */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,7 +363,6 @@
 				048FA106212EACA4009CCC62 /* UIView */,
 				0479E3EE212D6B22002D22B7 /* Label */,
 				0421EB5D212BB8440024CACD /* Textfield */,
-				0421EB58212BB63B0024CACD /* UIColor */,
 				04622B33212BAEAB00E3AC5F /* Button */,
 			);
 			path = Custom;
@@ -791,6 +780,7 @@
 				0441DDFE21266CFA0023E22E /* Embed Frameworks */,
 				04F205DD212FA71A00E94B20 /* ShellScript */,
 				662FD4CB29422D74167DF116 /* [CP] Embed Pods Frameworks */,
+				AEE7C4F3BEC37E49A6C697F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -989,6 +979,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AEE7C4F3BEC37E49A6C697F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1011,7 +1021,6 @@
 				04884011212EB9A400E2C38B /* BorderUIView.swift in Sources */,
 				04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */,
 				04F20605212FEB0400E94B20 /* MenuTableTableViewCell.swift in Sources */,
-				0421EB5A212BB6530024CACD /* RBGColor.swift in Sources */,
 				0422EFE721338CF300939059 /* UIImage+EXT.swift in Sources */,
 				048FA0FD212E8E62009CCC62 /* Register_BackTopViewController.swift in Sources */,
 				049D255D2125104B0054214E /* LoginViewController.swift in Sources */,

@@ -43,5 +43,12 @@
 	<string>Use camera</string>
 	<key>Privacy - Photo Library Usage Description </key>
 	<string>Use photo library</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Use GPS</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemap</string>
+	</array>
 </dict>
 </plist>

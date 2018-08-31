@@ -21,8 +21,8 @@ class DisableTextfield: BoderTextField {
     }
     
     private func setupUI() {
-        let colorBackground = hexStringToUIColor(hex: "D3D3D3")
-        self.backgroundColor = colorBackground
+
+        self.backgroundColor = kDarkGrayBackGroundDisableTextfield
         self.textColor = UIColor.black
         self.isEnabled = false
     }

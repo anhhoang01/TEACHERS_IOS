@@ -11,8 +11,6 @@ import Foundation
 import UIKit
 
 class DropDownButton: UIButton {
-    private let colorBackground = hexStringToUIColor(hex: "EBEBEB")
-    private let colorBoder = hexStringToUIColor(hex: "424242")
     @IBInspectable var cornerRadius: CGFloat = 7 {
         didSet {
             self.layer.cornerRadius = cornerRadius
@@ -21,7 +19,7 @@ class DropDownButton: UIButton {
     @IBInspectable var borderColor: Bool = true {
         didSet {
             if borderColor == true {
-                self.layer.borderColor = colorBoder.cgColor
+                self.layer.borderColor = kDrakGrayBoder.cgColor
                 
             }else {
                 self.layer.borderColor = UIColor.clear.cgColor
@@ -42,7 +40,7 @@ class DropDownButton: UIButton {
     private func setupUI() {
 
         
-        self.backgroundColor = colorBackground
+        self.backgroundColor = kDarkGray
         self.setTitleColor(UIColor.darkGray, for: .normal)
         if #available(iOS 8.2, *) {
             self.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)

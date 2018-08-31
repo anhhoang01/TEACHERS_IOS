@@ -21,11 +21,10 @@ class GreenButton: UIButton {
     }
     
     private func setupUI() {
-        let colorBackground = hexStringToUIColor(hex: "62BE4D")
         self.layer.cornerRadius = 7
         self.layer.borderWidth = 1
-        self.layer.borderColor = colorBackground.cgColor
-        self.backgroundColor = colorBackground
+        self.layer.borderColor = kGreenBackGroundButton.cgColor
+        self.backgroundColor = kGreenBackGroundButton
         self.setTitleColor(UIColor.white, for: .normal)
         if #available(iOS 8.2, *) {
             self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)

@@ -11,6 +11,14 @@ import UIKit
 class MenuTableTableViewCell: UITableViewCell {
 
     @IBOutlet weak var menuCell: UILabel?
-    
+    @IBOutlet weak var lineView: UIView!
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self._setupUI()
+    }
+    private func _setupUI(){
+        
+        lineView.backgroundColor = kGreenLine        
+    }
     
 }

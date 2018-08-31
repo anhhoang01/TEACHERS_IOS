@@ -7,6 +7,8 @@
 //
 import UIKit
 import LGSideMenuController
+import GoogleMaps
+import GooglePlaces
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
+        GMSServices.provideAPIKey("AIzaSyDYnkf18P9cfccL8ht1dpWH1cUOHa8QOBI")
+        GMSPlacesClient.provideAPIKey("AIzaSyDYnkf18P9cfccL8ht1dpWH1cUOHa8QOBI")
         if (kUserDefault.bool(forKey: kuser)){
             let viewcontroller = Student_toppageViewController.nib()
             let navigation = BaseNavigationController(rootViewController: viewcontroller)

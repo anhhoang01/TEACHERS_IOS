@@ -22,21 +22,22 @@ class MenuTableViewController: BaseViewController , UITableViewDelegate, UITable
     //MARK: PROPERTIES
     private var isStudentList: Bool = false
     private var arrTitleMenu : [String] = []
+    
+    //PRIVATE FUNCTION
     private func setupStudentList() {
         arrTitleMenu.removeAll()
         if isStudentList {
-            let arrStudent = ["1","2","3","4","5","6"]
+            let arrStudent = ["ホーム","プロフィール編集","設定","お問い合わせ","利用規約","ログアウト"]
             for i in arrStudent {
                 arrTitleMenu.append(i)
             }
         }else {
-            let arrTeachers = ["7","8","9","10","11","12"]
+            let arrTeachers = ["ホーム","プロフィール編集","設定","お問い合わせ","利用規約","ログアウト OUT"]
             for i in arrTeachers {
                 arrTitleMenu.append(i)
             }
         }
     }
-    //PRIVATE FUNCTION
     private func setupUI(){
         tableView.register(MenuTableTableViewCell.self)
         tableView.separatorStyle = .none
@@ -44,6 +45,14 @@ class MenuTableViewController: BaseViewController , UITableViewDelegate, UITable
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .clear
         self.navigationController?.isNavigationBarHidden = true
+        
+        if kUserDefault.integer(forKey: kUserType) == 1 {
+            isStudentList = true
+            
+        }else {
+            isStudentList = false
+            
+        }
         setupStudentList()
     }
     
@@ -71,7 +80,24 @@ class MenuTableViewController: BaseViewController , UITableViewDelegate, UITable
     }
     internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if isStudentList {
-            
+            switch indexPath.row {
+            case 5:
+                let alert = UIAlertController(title: "TEACHERS", message: "LOGOUT", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "NO", style: .cancel))
+                alert.addAction(UIAlertAction(title: "YES", style: .default, handler: {action in
+                    //call api logout
+                    let viewcontroller = LoginViewController.nib()
+                    let navigation = BaseNavigationController(rootViewController: viewcontroller)
+                    if let window = UIApplication.shared.keyWindow {
+                        window.rootViewController = navigation
+                        kUserDefault.set(false, forKey: kuser)
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+                
+            default:
+                break
+            }
         }else {
             switch indexPath.row{
             case 0:

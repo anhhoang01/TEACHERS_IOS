@@ -23,12 +23,11 @@ class BoderTextField: BaseTextField {
     }
     
     private func setupUI() {
-        let colorBackground = hexStringToUIColor(hex: "EBEBEB")
-        let colorBoder = hexStringToUIColor(hex: "424242")
+        
         self.layer.cornerRadius = 7
         self.layer.borderWidth = 1
-        self.layer.borderColor = colorBoder.cgColor
-        self.backgroundColor = colorBackground
+        self.layer.borderColor = kDrakGrayBoder.cgColor
+        self.backgroundColor = kDarkGray
         self.textColor = UIColor.darkGray
         if #available(iOS 8.2, *) {
             self.font = UIFont.systemFont(ofSize: 16, weight: .medium)

@@ -200,7 +200,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW4-Fi-AWd" customClass="ValidLabel" customModule="TEACHERS_IOS" customModuleProvider="target">
                                 <rect key="frame" x="13" y="256.5" width="486" height="21"/>
-                                <mutableString key="text">ここでは4で指定した日の何時から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。</mutableString>
+                                <string key="text">ここでは4で指定した日の何時から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

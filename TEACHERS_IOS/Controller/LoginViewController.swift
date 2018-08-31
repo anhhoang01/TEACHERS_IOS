@@ -86,6 +86,11 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
             //user.email = tfemail.text user.pass = tfpass.text
             //completion
             kUserDefault.set(true, forKey: kuser)
+            if tfEmail.text?.trim() == "1" {
+                kUserDefault.set(1, forKey: kUserType)
+            }else {
+                kUserDefault.set(2, forKey: kUserType)
+            }
             return true
         }        
         return false

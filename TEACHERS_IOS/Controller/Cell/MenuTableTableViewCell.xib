@@ -26,15 +26,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-BE-y8Z">
+                        <rect key="frame" x="10" y="53" width="308" height="1"/>
+                        <color key="backgroundColor" red="0.6470588235294118" green="0.73725490196078436" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BEF-FL-4jd"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vdi-BE-y8Z" secondAttribute="trailing" id="2cq-Cz-qJH"/>
+                    <constraint firstAttribute="bottom" secondItem="vdi-BE-y8Z" secondAttribute="bottom" id="NAX-04-vWg"/>
                     <constraint firstItem="cjK-6a-71V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Oi8-K5-sxA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="cjK-6a-71V" secondAttribute="trailing" constant="20" id="aFO-OP-ZQJ"/>
+                    <constraint firstItem="vdi-BE-y8Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tIK-oi-Jb2"/>
                     <constraint firstItem="cjK-6a-71V" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tdw-jh-RMw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="lineView" destination="vdi-BE-y8Z" id="sB0-2o-TJI"/>
                 <outlet property="menuCell" destination="cjK-6a-71V" id="iXK-Rb-GsZ"/>
             </connections>
             <point key="canvasLocation" x="26" y="57"/>
