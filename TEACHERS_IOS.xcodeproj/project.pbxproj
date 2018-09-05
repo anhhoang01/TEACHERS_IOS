@@ -418,6 +418,13 @@
 			path = Student_Register;
 			sourceTree = "<group>";
 		};
+		0475D7E9213FC3E200879DED /* 16-2.Lesson_reservation_by_calender  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "16-2.Lesson_reservation_by_calender ";
+			sourceTree = "<group>";
+		};
 		0479E3DD212CEE66002D22B7 /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +519,13 @@
 			name = UIView;
 			sourceTree = "<group>";
 		};
+		0491B1EF213F713000F97EA4 /* Search Lesson Nil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Search Lesson Nil";
+			sourceTree = "<group>";
+		};
 		049D251A21250EB50054214E = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +595,7 @@
 		049D255721250F160054214E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0475D7E9213FC3E200879DED /* 16-2.Lesson_reservation_by_calender  */,
 				04F20608212FF34A00E94B20 /* MenuTable */,
 				04F205FD212FBB8200E94B20 /* 5.Lesson_reservation */,
 				04F205F8212FBA0900E94B20 /* 15.Terms of service */,
@@ -721,6 +736,7 @@
 		04F205FD212FBB8200E94B20 /* 5.Lesson_reservation */ = {
 			isa = PBXGroup;
 			children = (
+				0491B1EF213F713000F97EA4 /* Search Lesson Nil */,
 				048EC3912134DC6C00557B28 /* Cell */,
 				04F205FE212FBBD500E94B20 /* Lesson_reservationViewController.swift */,
 				04F205FF212FBBD500E94B20 /* Lesson_reservationViewController.xib */,
@@ -839,6 +855,7 @@
 				TargetAttributes = {
 					049D252221250EB50054214E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					049D253621250EB50054214E = {
@@ -940,18 +957,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TEACHERS_IOS/Pods-TEACHERS_IOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
@@ -1229,6 +1250,7 @@
 			baseConfigurationReference = C1B72CF13F6367AE611A0066 /* Pods-TEACHERS_IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAXH63MW67;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1239,6 +1261,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jilnesta.TEACHERS-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1249,6 +1272,7 @@
 			baseConfigurationReference = 8067575CBF252832AADBC15A /* Pods-TEACHERS_IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAXH63MW67;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -12,7 +12,8 @@ target 'TEACHERS_IOS' do
     pod 'ExpandableCell', '~> 1.2.3'
     pod 'GoogleMaps', '~> 2.1'
     pod 'GooglePlaces', '~> 2.1'
-    pod 'Alamofire'
+    pod 'Alamofire', '~> 4.7.3'
+    pod 'MGSwipeTableCell', '~> 1.6.7'
 end
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

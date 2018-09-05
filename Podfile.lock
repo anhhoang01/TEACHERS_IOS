@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - Cosmos (16.0.0)
   - ExpandableCell (1.2.3)
   - GoogleMaps (2.7.0):
@@ -12,40 +13,47 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
+  - MGSwipeTableCell (1.6.7)
   - PureLayout (3.1)
   - TPKeyboardAvoiding (1.3.2)
 
 DEPENDENCIES:
+  - Alamofire
   - Cosmos (~> 16.0)
   - ExpandableCell (~> 1.2.3)
   - GoogleMaps (~> 2.1)
   - GooglePlaces (~> 2.1)
   - LGSideMenuController (~> 2.1.1)
   - MagicalRecord (~> 2.3.2)
+  - MGSwipeTableCell
   - PureLayout (~> 3.1)
   - TPKeyboardAvoiding (~> 1.3.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Cosmos
     - ExpandableCell
     - GoogleMaps
     - GooglePlaces
     - LGSideMenuController
     - MagicalRecord
+    - MGSwipeTableCell
     - PureLayout
     - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
   ExpandableCell: 99a7993b6b61af6a9b5821f67a772d6402ffcda2
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MGSwipeTableCell: fb20e983988bde2b8d0df29c2d9e1d8ffd10b74a
   PureLayout: 7fba48da8b04f0a1fea33d3424b016e958d33ac0
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: 5911a0360642146ebe56f10062bd959f6616e255
+PODFILE CHECKSUM: aa86389945baedeecb47b97f61d59e5a57c56210
 
 COCOAPODS: 1.5.3

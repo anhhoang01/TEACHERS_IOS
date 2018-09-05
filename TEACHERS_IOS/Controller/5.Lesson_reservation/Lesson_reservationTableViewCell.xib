@@ -37,23 +37,23 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSz-cM-gZ2">
-                                <rect key="frame" x="139" y="20" width="57.5" height="26.5"/>
+                                <rect key="frame" x="134" y="20" width="349" height="26.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAZ-oa-gt8">
-                                <rect key="frame" x="139" y="56.5" width="339" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAZ-oa-gt8" userLabel="Line">
+                                <rect key="frame" x="134" y="56.5" width="349" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ted-hH-A6o"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aop-ke-HKz">
-                                <rect key="frame" x="139" y="67.5" width="339" height="44"/>
+                                <rect key="frame" x="134" y="67.5" width="349" height="44"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-Ta-7nt">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="44"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FTT-U0-gOU">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -79,7 +79,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6NK-ze-h5M">
-                                        <rect key="frame" x="109.5" y="0.0" width="110" height="44"/>
+                                        <rect key="frame" x="113" y="0.0" width="113" height="44"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mv4-bm-Kj5">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -105,7 +105,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mh8-Vf-DYC">
-                                        <rect key="frame" x="229.5" y="0.0" width="109.5" height="44"/>
+                                        <rect key="frame" x="236" y="0.0" width="113" height="44"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYE-TL-EWK">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -146,7 +146,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lr-f9-a9a" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="139" y="121.5" width="140" height="60"/>
+                                <rect key="frame" x="134" y="121.5" width="140" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
@@ -174,13 +174,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43U-0S-ONJ" customClass="BoldLabel" customModule="TEACHERS_IOS" customModuleProvider="target">
-                                <rect key="frame" x="289" y="161.5" width="44.5" height="20"/>
+                                <rect key="frame" x="284" y="161.5" width="44.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZg-bm-s05" customClass="BoldLabel" customModule="TEACHERS_IOS" customModuleProvider="target">
-                                <rect key="frame" x="436" y="160.5" width="42" height="21"/>
+                                <rect key="frame" x="441" y="160.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -199,7 +199,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW4-Fi-AWd" customClass="ValidLabel" customModule="TEACHERS_IOS" customModuleProvider="target">
-                                <rect key="frame" x="13" y="256.5" width="486" height="21"/>
+                                <rect key="frame" x="5" y="256.5" width="486" height="21"/>
                                 <string key="text">ここでは4で指定した日の何時から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。から何時までの予約が空いている講師を表示するのかのFromを選択することが出来ます。ここで指定した時間以降の時間に予約がある講師のみが表示されるようになります。デフォルトでは指定なしが選択されています。選択肢の内容は「指定なし」と「0:00」～「23:00」までを一時間ごとになります。「指定なし」を選択した場合は特に時間の指定はしません。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -208,25 +208,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iW4-Fi-AWd" secondAttribute="bottom" constant="20" id="2Cb-MZ-j5m"/>
                             <constraint firstItem="3UL-G7-S1X" firstAttribute="top" secondItem="WNV-SG-Vdz" secondAttribute="bottom" constant="10" id="3Kk-cc-LAZ"/>
                             <constraint firstItem="1lr-f9-a9a" firstAttribute="leading" secondItem="aop-ke-HKz" secondAttribute="leading" id="7ca-5r-9mk"/>
-                            <constraint firstItem="iW4-Fi-AWd" firstAttribute="leading" secondItem="sfb-q7-y6s" secondAttribute="leadingMargin" constant="5" id="D9r-EL-x6I"/>
+                            <constraint firstItem="LSz-cM-gZ2" firstAttribute="trailing" secondItem="NAZ-oa-gt8" secondAttribute="trailing" id="8Tl-HE-1qy"/>
                             <constraint firstItem="FZg-bm-s05" firstAttribute="trailing" secondItem="NAZ-oa-gt8" secondAttribute="trailing" id="Edc-Pm-Sz8"/>
-                            <constraint firstItem="WNV-SG-Vdz" firstAttribute="top" secondItem="1lr-f9-a9a" secondAttribute="bottom" constant="20" id="Kuo-S4-KFM"/>
+                            <constraint firstItem="WNV-SG-Vdz" firstAttribute="top" secondItem="1lr-f9-a9a" secondAttribute="bottom" constant="20" id="FYA-sA-kHc"/>
                             <constraint firstItem="3UL-G7-S1X" firstAttribute="leading" secondItem="sfb-q7-y6s" secondAttribute="leadingMargin" constant="5" id="Nfj-25-TIr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NAZ-oa-gt8" secondAttribute="trailing" constant="10" id="NwV-zc-ZmX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NAZ-oa-gt8" secondAttribute="trailing" constant="5" id="NwV-zc-ZmX"/>
                             <constraint firstItem="NAZ-oa-gt8" firstAttribute="top" secondItem="LSz-cM-gZ2" secondAttribute="bottom" constant="10" id="S2M-Zz-kuR"/>
                             <constraint firstItem="LSz-cM-gZ2" firstAttribute="leading" secondItem="NAZ-oa-gt8" secondAttribute="leading" id="S6N-dd-uXw"/>
                             <constraint firstItem="iW4-Fi-AWd" firstAttribute="top" secondItem="3UL-G7-S1X" secondAttribute="bottom" constant="20" id="TVJ-5E-g0v"/>
                             <constraint firstItem="FZg-bm-s05" firstAttribute="bottom" secondItem="43U-0S-ONJ" secondAttribute="bottom" id="UYH-w8-AeM"/>
                             <constraint firstItem="43U-0S-ONJ" firstAttribute="bottom" secondItem="1lr-f9-a9a" secondAttribute="bottom" id="XAg-ME-yPP"/>
                             <constraint firstItem="iW4-Fi-AWd" firstAttribute="width" secondItem="sfb-q7-y6s" secondAttribute="width" constant="-10" id="ZkE-P1-2rq"/>
+                            <constraint firstItem="iW4-Fi-AWd" firstAttribute="centerX" secondItem="sfb-q7-y6s" secondAttribute="centerX" id="cI0-iG-QQw"/>
                             <constraint firstItem="WNV-SG-Vdz" firstAttribute="leading" secondItem="sfb-q7-y6s" secondAttribute="leading" id="h6i-ed-fbm"/>
-                            <constraint firstItem="NAZ-oa-gt8" firstAttribute="leading" secondItem="bgl-6q-HaQ" secondAttribute="trailing" constant="10" id="kGd-Us-qcP"/>
+                            <constraint firstItem="NAZ-oa-gt8" firstAttribute="leading" secondItem="bgl-6q-HaQ" secondAttribute="trailing" constant="5" id="kGd-Us-qcP"/>
                             <constraint firstItem="43U-0S-ONJ" firstAttribute="leading" secondItem="1lr-f9-a9a" secondAttribute="trailing" constant="10" id="l38-ht-2oi"/>
                             <constraint firstItem="bgl-6q-HaQ" firstAttribute="leading" secondItem="sfb-q7-y6s" secondAttribute="leading" constant="5" id="naD-L6-miS"/>
                             <constraint firstItem="aop-ke-HKz" firstAttribute="trailing" secondItem="NAZ-oa-gt8" secondAttribute="trailing" id="oqY-XI-hdD"/>
-                            <constraint firstAttribute="bottom" secondItem="iW4-Fi-AWd" secondAttribute="bottom" constant="20" id="p6s-88-gLZ"/>
                             <constraint firstItem="aop-ke-HKz" firstAttribute="leading" secondItem="NAZ-oa-gt8" secondAttribute="leading" id="qvd-kz-e1b"/>
                             <constraint firstItem="LSz-cM-gZ2" firstAttribute="top" secondItem="bgl-6q-HaQ" secondAttribute="top" id="rXr-qe-a4N"/>
                             <constraint firstItem="1lr-f9-a9a" firstAttribute="top" secondItem="aop-ke-HKz" secondAttribute="bottom" constant="10" id="rqa-e6-Ykv"/>
@@ -269,6 +270,7 @@
                 <outlet property="lblRPTeacher" destination="iW4-Fi-AWd" id="DuK-yV-MFH"/>
                 <outlet property="lblScore" destination="43U-0S-ONJ" id="ynl-5E-awE"/>
                 <outlet property="lblSex" destination="wak-6Z-CwH" id="TN3-UB-lTc"/>
+                <outlet property="ratingView" destination="1lr-f9-a9a" id="flj-YX-7Bk"/>
             </connections>
             <point key="canvasLocation" x="126" y="178"/>
         </tableViewCell>
