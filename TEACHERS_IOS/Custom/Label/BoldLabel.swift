@@ -18,13 +18,16 @@ class BoldLabel: UILabel {
         super.init(coder: aDecoder)
         setupUI()
     }
-    
+    @IBInspectable var fontSize: CGFloat = 20 {
+        didSet {
+            if #available(iOS 8.2, *) {
+                self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+            } else {
+                self.font = UIFont.boldSystemFont(ofSize: fontSize)
+            }
+        }
+    }
     private func setupUI() {
         self.textColor = UIColor.black
-        if #available(iOS 8.2, *) {
-            self.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        } else {
-            self.font = UIFont.boldSystemFont(ofSize: 20)
-        }
     }
 }

@@ -108,6 +108,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LY-w2-OGD">
                                     <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
+                                    <connections>
+                                        <action selector="actionStudent_lesson_history:" destination="-1" eventType="touchUpInside" id="XIu-RS-faB"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

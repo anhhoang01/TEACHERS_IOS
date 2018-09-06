@@ -32,6 +32,10 @@
 		04493FBD212E74E000F8A23A /* Date+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBC212E74E000F8A23A /* Date+ETX.swift */; };
 		04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBE212E750E00F8A23A /* Notification+ETX.swift */; };
 		04493FC1212E75E000F8A23A /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FC0212E75E000F8A23A /* UIHelper.swift */; };
+		044F5E062140BD0A00D1D806 /* Student_lesson_historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E042140BD0A00D1D806 /* Student_lesson_historyViewController.swift */; };
+		044F5E072140BD0A00D1D806 /* Student_lesson_historyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E052140BD0A00D1D806 /* Student_lesson_historyViewController.xib */; };
+		044F5E0B2140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E092140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift */; };
+		044F5E0C2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E0A2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib */; };
 		04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04622B24212B9BF000E3AC5F /* DropDownCell.xib */; };
 		04622B29212B9BF000E3AC5F /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B25212B9BF000E3AC5F /* DropDown.swift */; };
 		04622B2A212B9BF000E3AC5F /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */; };
@@ -155,6 +159,10 @@
 		04493FBC212E74E000F8A23A /* Date+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ETX.swift"; sourceTree = "<group>"; };
 		04493FBE212E750E00F8A23A /* Notification+ETX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+ETX.swift"; sourceTree = "<group>"; };
 		04493FC0212E75E000F8A23A /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		044F5E042140BD0A00D1D806 /* Student_lesson_historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_lesson_historyViewController.swift; sourceTree = "<group>"; };
+		044F5E052140BD0A00D1D806 /* Student_lesson_historyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_lesson_historyViewController.xib; sourceTree = "<group>"; };
+		044F5E092140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_lesson_historyTableViewCell.swift; sourceTree = "<group>"; };
+		044F5E0A2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_lesson_historyTableViewCell.xib; sourceTree = "<group>"; };
 		04622B24212B9BF000E3AC5F /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
 		04622B25212B9BF000E3AC5F /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
@@ -346,6 +354,40 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		044F5E032140BCEA00D1D806 /* 7.Student_lesson_history */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E082140BF0300D1D806 /* Student_lesson_historyCell */,
+				044F5E042140BD0A00D1D806 /* Student_lesson_historyViewController.swift */,
+				044F5E052140BD0A00D1D806 /* Student_lesson_historyViewController.xib */,
+			);
+			name = 7.Student_lesson_history;
+			sourceTree = "<group>";
+		};
+		044F5E082140BF0300D1D806 /* Student_lesson_historyCell */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E092140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift */,
+				044F5E0A2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib */,
+			);
+			name = Student_lesson_historyCell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		044F5E0D2141029900D1D806 /* 6.Student_check_reservation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 6.Student_check_reservation;
+			sourceTree = "<group>";
+		};
+		044F5E0E2141101300D1D806 /* 8.Student_lesson_start */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 8.Student_lesson_start;
+			sourceTree = "<group>";
+		};
 		04622B23212B9BC600E3AC5F /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,13 +509,13 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-		048EC3912134DC6C00557B28 /* Cell */ = {
+		048EC3912134DC6C00557B28 /* Lesson_reservationCell */ = {
 			isa = PBXGroup;
 			children = (
 				048EC3922134DCB400557B28 /* Lesson_reservationTableViewCell.swift */,
 				048EC3932134DCB400557B28 /* Lesson_reservationTableViewCell.xib */,
 			);
-			name = Cell;
+			name = Lesson_reservationCell;
 			sourceTree = "<group>";
 		};
 		048EC3982135017900557B28 /* ImageView */ = {
@@ -595,6 +637,9 @@
 		049D255721250F160054214E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				044F5E0E2141101300D1D806 /* 8.Student_lesson_start */,
+				044F5E0D2141029900D1D806 /* 6.Student_check_reservation */,
+				044F5E032140BCEA00D1D806 /* 7.Student_lesson_history */,
 				0475D7E9213FC3E200879DED /* 16-2.Lesson_reservation_by_calender  */,
 				04F20608212FF34A00E94B20 /* MenuTable */,
 				04F205FD212FBB8200E94B20 /* 5.Lesson_reservation */,
@@ -737,7 +782,7 @@
 			isa = PBXGroup;
 			children = (
 				0491B1EF213F713000F97EA4 /* Search Lesson Nil */,
-				048EC3912134DC6C00557B28 /* Cell */,
+				048EC3912134DC6C00557B28 /* Lesson_reservationCell */,
 				04F205FE212FBBD500E94B20 /* Lesson_reservationViewController.swift */,
 				04F205FF212FBBD500E94B20 /* Lesson_reservationViewController.xib */,
 			);
@@ -905,7 +950,9 @@
 				04F205E2212FAA5C00E94B20 /* Student_profile_editViewController.xib in Resources */,
 				04F20601212FBBD500E94B20 /* Lesson_reservationViewController.xib in Resources */,
 				049D253121250EB50054214E /* LaunchScreen.storyboard in Resources */,
+				044F5E0C2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib in Resources */,
 				0422F0182133F96E00939059 /* Nikme in Resources */,
+				044F5E072140BD0A00D1D806 /* Student_lesson_historyViewController.xib in Resources */,
 				04F205F2212FB6E700E94B20 /* Student_SettingViewController.xib in Resources */,
 				04F205FC212FBA2D00E94B20 /* Terms_of_serviceViewController.xib in Resources */,
 				04F20610212FF44C00E94B20 /* MenuTableViewController.xib in Resources */,
@@ -1028,6 +1075,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0422EFE621338CF300939059 /* UITableViewController+EXT.swift in Sources */,
+				044F5E062140BD0A00D1D806 /* Student_lesson_historyViewController.swift in Sources */,
 				049D2564212520820054214E /* Forgot_passwordViewController.swift in Sources */,
 				0422EFEB21339B4700939059 /* BaseViewcontroller.swift in Sources */,
 				0422EFF02133BB2500939059 /* BaseSlider.swift in Sources */,
@@ -1062,6 +1110,7 @@
 				0422F00D2133D44900939059 /* PulicStruct.swift in Sources */,
 				0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */,
 				0479E3E2212CFCD6002D22B7 /* DatePickerDialog.swift in Sources */,
+				044F5E0B2140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift in Sources */,
 				04F20612212FFD6D00E94B20 /* AppDefines.swift in Sources */,
 				048EC39C2135293400557B28 /* BorderRoundUIView.swift in Sources */,
 				04F2060F212FF44C00E94B20 /* MenuTableViewController.swift in Sources */,

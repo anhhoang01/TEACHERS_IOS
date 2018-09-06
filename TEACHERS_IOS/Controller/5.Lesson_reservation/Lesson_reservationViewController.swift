@@ -202,10 +202,11 @@ class Lesson_reservationViewController: BaseViewController {
             heightViewSearch.constant = 0
             isHidenView = true
         }
+        tfSearchPR.resignFirstResponder()
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
         }
-        tfSearchPR.resignFirstResponder()
+        
     }
     
 }
@@ -250,7 +251,7 @@ extension Lesson_reservationViewController : UITableViewDataSource , UITableView
     
     func showMailActions(_ mail: MailData, callback: @escaping MailActionCallback) {
         actionCallback = callback
-        let sheet = UIActionSheet.init(title: "Actions", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "Flag")
+        let sheet = UIActionSheet.init(title: "Actions", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "この講師のスケジュールを確認する")
         
         //sheet.addButton(withTitle: "Mark as unread")
         //sheet.addButton(withTitle: "Mark as read")
