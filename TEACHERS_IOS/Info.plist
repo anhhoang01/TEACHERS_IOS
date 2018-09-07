@@ -27,8 +27,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Use camera</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Use Location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Use GPS</string>
+	<string>Use Location</string>
 	<key>Privacy - Photo Library Usage Description </key>
 	<string>Use photo library</string>
 	<key>UILaunchStoryboardName</key>

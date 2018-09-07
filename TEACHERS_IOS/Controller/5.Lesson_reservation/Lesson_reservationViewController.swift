@@ -8,7 +8,6 @@
 
 import UIKit
 import GooglePlaces
-import MGSwipeTableCell
 class MailData {
     var avatar: String!
     var name: String!
@@ -210,13 +209,12 @@ class Lesson_reservationViewController: BaseViewController {
     }
     
 }
-extension Lesson_reservationViewController : UITableViewDataSource , UITableViewDelegate, UIActionSheetDelegate, MGSwipeTableCellDelegate {
+extension Lesson_reservationViewController : UITableViewDataSource , UITableViewDelegate, UIActionSheetDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return demoData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as Lesson_reservationTableViewCell
-        cell.delegate = self;
         let data: MailData = demoData[(indexPath as NSIndexPath).row];
         cell.imgAvatar.image = UIImage(named: data.avatar)
         cell.lblFullname.text = data.name
@@ -243,114 +241,7 @@ extension Lesson_reservationViewController : UITableViewDataSource , UITableView
         tableView.reloadData()
         refreshControl.endRefreshing()
     }
-    
-//    func deleteMail(_ path:IndexPath) {
-//        demoData.remove(at: (path as NSIndexPath).row)
-//        tableView.deleteRows(at: [path], with: .left)
-//    }
-    
-    func showMailActions(_ mail: MailData, callback: @escaping MailActionCallback) {
-        actionCallback = callback
-        let sheet = UIActionSheet.init(title: "Actions", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: "この講師のスケジュールを確認する")
-        
-        //sheet.addButton(withTitle: "Mark as unread")
-        //sheet.addButton(withTitle: "Mark as read")
-        //sheet.addButton(withTitle: "Flag")
-        
-        sheet.show(in: self.view);
-    }
-    
-    func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt index: Int) {
-        if let action = actionCallback {
-            action(index == actionSheet.cancelButtonIndex,
-                   index == actionSheet.destructiveButtonIndex,
-                   index);
-            actionCallback = nil
-        }
-    }
-    
-    func readButtonText(_ read:Bool) -> String {
-        return read ? "Mark as\nunread" : "Mark as\nread"
-    }
-    func swipeTableCell(_ cell: MGSwipeTableCell, canSwipe direction: MGSwipeDirection) -> Bool {
-        return true
-    }
-    func swipeTableCell(_ cell: MGSwipeTableCell, swipeButtonsFor direction: MGSwipeDirection, swipeSettings: MGSwipeSettings, expansionSettings: MGSwipeExpansionSettings) -> [UIView]? {
-        
-        swipeSettings.transition = MGSwipeTransition.border
-        expansionSettings.buttonIndex = 0
-        
-        
-//        let mail = mailForIndexPath(tableView.indexPath(for: cell)!)
-        
-        if direction == MGSwipeDirection.leftToRight {
-//            expansionSettings.fillOnTrigger = false
-//            expansionSettings.threshold = 2
-//            let color = UIColor.init(red:0.0, green:122/255.0, blue:1.0, alpha:1.0)
-//
-//            return [
-//                MGSwipeButton(title: readButtonText(mail.read), backgroundColor: color, callback: { (cell) -> Bool in
-//                    mail.read = !mail.read
-//                    cell.refreshContentView()
-//                    (cell.leftButtons[0] as! UIButton).setTitle(self.readButtonText(mail.read), for: UIControlState())
-//
-//                    return true
-//                })
-//            ]
-            return nil
-        }
-        else {
-            expansionSettings.fillOnTrigger = true
-            expansionSettings.threshold = 1.1
-            let padding = 15
-            
-//            let trash = MGSwipeButton(title: "Trash", backgroundColor: color1, padding: padding, callback: { (cell) -> Bool in
-//                self.deleteMail(self.tableView.indexPath(for: cell)!)
-//                return false; //don't autohide to improve delete animation
-//            })
-            
-            let flag = MGSwipeButton(title: "Flag", backgroundColor: kBlueColor, padding: padding, callback: { (cell) -> Bool in
-                let mail = self.mailForIndexPath(self.tableView.indexPath(for: cell)!)
-                print("--> mail",mail)
-                //push to 16-2.Lesson_reservation_by_calender
-                cell.refreshContentView() //needed to refresh cell contents while swipping
-                return true //autohide
-            });
-            
-//            let more = MGSwipeButton(title: "More", backgroundColor: color3, padding: padding, callback: { (cell) -> Bool in
-//                let path = self.tableView.indexPath(for: cell)!
-//                let mail = self.mailForIndexPath(path)
-//
-//                self.showMailActions(mail, callback: { (cancelled, deleted, index) in
-//                    if cancelled {
-//                        return
-//                    }
-//                    else if deleted {
-//                        self.deleteMail(path)
-//                    }
-//                    else if index == 1 {
-//                        mail.read = !mail.read
-//                        cell.refreshContentView()
-//                        (cell.leftButtons[0] as! UIButton).setTitle(self.readButtonText(mail.read), for: UIControlState())
-//                        cell.hideSwipe(animated: true);
-//                    }
-//                    else if index == 2 {
-//                        mail.flag = !mail.flag;
-//                        cell.refreshContentView(); //needed to refresh cell contents while swipping
-//                        cell.hideSwipe(animated: true);
-//                    }
-//
-//                });
-//
-//                return false; // Don't autohide
-//            });
-            //return [trash, flag, more];
-            return [flag]
-        }
-        
-    }
-    
-   
+
 }
 //MARK: EXTENTION GMSAutocompleteViewControllerDelegate
 extension Lesson_reservationViewController: GMSAutocompleteViewControllerDelegate {
@@ -360,6 +251,8 @@ extension Lesson_reservationViewController: GMSAutocompleteViewControllerDelegat
         print("Place name: \(place.name)")
         print("Place address: \(String(describing: place.formattedAddress))")
         print("Place attributions: \(String(describing: place.attributions))")
+        print(place.coordinate.latitude)
+        print(place.coordinate.longitude)
         lblSearchAddress.text = place.formattedAddress
         //call api search teachers in place
         dismiss(animated: true, completion: nil)

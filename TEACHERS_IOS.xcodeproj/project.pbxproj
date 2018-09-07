@@ -12,7 +12,6 @@
 		0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB60212BC5490024CACD /* WhiteButton.swift */; };
 		0421EB64212BC8F20024CACD /* Register_CardIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */; };
 		0421EB65212BC8F20024CACD /* Register_CardIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */; };
-		0422EFE221338CF300939059 /* Date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDA21338CF200939059 /* Date+EXT.swift */; };
 		0422EFE321338CF300939059 /* Array+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDB21338CF300939059 /* Array+EXT.swift */; };
 		0422EFE421338CF300939059 /* UIDevice+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDC21338CF300939059 /* UIDevice+EXT.swift */; };
 		0422EFE521338CF300939059 /* Font+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFDD21338CF300939059 /* Font+EXT.swift */; };
@@ -27,7 +26,6 @@
 		0422EFFE2133CBEA00939059 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422EFFD2133CBEA00939059 /* MapView.swift */; };
 		0422F0072133CE5A00939059 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F0062133CE5A00939059 /* BaseTextField.swift */; };
 		0422F00D2133D44900939059 /* PulicStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422F00C2133D44900939059 /* PulicStruct.swift */; };
-		0422F0182133F96E00939059 /* Nikme in Resources */ = {isa = PBXBuildFile; fileRef = 0422F0172133F96E00939059 /* Nikme */; };
 		04493FBB212E6B0E00F8A23A /* ServiceDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBA212E6B0E00F8A23A /* ServiceDefine.swift */; };
 		04493FBD212E74E000F8A23A /* Date+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBC212E74E000F8A23A /* Date+ETX.swift */; };
 		04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04493FBE212E750E00F8A23A /* Notification+ETX.swift */; };
@@ -36,6 +34,24 @@
 		044F5E072140BD0A00D1D806 /* Student_lesson_historyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E052140BD0A00D1D806 /* Student_lesson_historyViewController.xib */; };
 		044F5E0B2140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E092140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift */; };
 		044F5E0C2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E0A2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib */; };
+		044F5E1121420D6E00D1D806 /* Student_lesson_startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E0F21420D6E00D1D806 /* Student_lesson_startViewController.swift */; };
+		044F5E1221420D6E00D1D806 /* Student_lesson_startViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E1021420D6E00D1D806 /* Student_lesson_startViewController.xib */; };
+		044F5E142142122600D1D806 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E132142122600D1D806 /* constants.swift */; };
+		044F5E1A214213A900D1D806 /* DirectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E19214213A900D1D806 /* DirectionService.swift */; };
+		044F5E24214217AA00D1D806 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E1B214217A800D1D806 /* Leg.swift */; };
+		044F5E25214217AA00D1D806 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E1C214217A900D1D806 /* Polyline.swift */; };
+		044F5E26214217AA00D1D806 /* GoogleMapValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E1D214217A900D1D806 /* GoogleMapValue.swift */; };
+		044F5E27214217AA00D1D806 /* GeocodedWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E1E214217A900D1D806 /* GeocodedWaypoint.swift */; };
+		044F5E28214217AA00D1D806 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E1F214217A900D1D806 /* Bounds.swift */; };
+		044F5E29214217AA00D1D806 /* DirectionOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E20214217A900D1D806 /* DirectionOverview.swift */; };
+		044F5E2A214217AA00D1D806 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E21214217AA00D1D806 /* Route.swift */; };
+		044F5E2B214217AA00D1D806 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E22214217AA00D1D806 /* Location.swift */; };
+		044F5E2C214217AA00D1D806 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E23214217AA00D1D806 /* Step.swift */; };
+		044F5E2F214217EA00D1D806 /* NikmeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E2E214217EA00D1D806 /* NikmeLogger.swift */; };
+		044F5E352142640100D1D806 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E332142640100D1D806 /* InfoViewController.swift */; };
+		044F5E362142640100D1D806 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E342142640100D1D806 /* InfoViewController.xib */; };
+		044F5E3A2142645500D1D806 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F5E382142645500D1D806 /* InfoTableViewCell.swift */; };
+		044F5E3B2142645500D1D806 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F5E392142645500D1D806 /* InfoTableViewCell.xib */; };
 		04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04622B24212B9BF000E3AC5F /* DropDownCell.xib */; };
 		04622B29212B9BF000E3AC5F /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B25212B9BF000E3AC5F /* DropDown.swift */; };
 		04622B2A212B9BF000E3AC5F /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */; };
@@ -137,7 +153,6 @@
 		0421EB60212BC5490024CACD /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 		0421EB62212BC8F20024CACD /* Register_CardIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_CardIDViewController.swift; sourceTree = "<group>"; };
 		0421EB63212BC8F20024CACD /* Register_CardIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register_CardIDViewController.xib; sourceTree = "<group>"; };
-		0422EFDA21338CF200939059 /* Date+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+EXT.swift"; sourceTree = "<group>"; };
 		0422EFDB21338CF300939059 /* Array+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+EXT.swift"; sourceTree = "<group>"; };
 		0422EFDC21338CF300939059 /* UIDevice+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+EXT.swift"; sourceTree = "<group>"; };
 		0422EFDD21338CF300939059 /* Font+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+EXT.swift"; sourceTree = "<group>"; };
@@ -152,7 +167,6 @@
 		0422EFFD2133CBEA00939059 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0422F0062133CE5A00939059 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		0422F00C2133D44900939059 /* PulicStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulicStruct.swift; sourceTree = "<group>"; };
-		0422F0172133F96E00939059 /* Nikme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nikme; sourceTree = "<group>"; };
 		0441DDF3212654960023E22E /* libDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0441DDF52126549E0023E22E /* libLGSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLGSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04493FBA212E6B0E00F8A23A /* ServiceDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDefine.swift; sourceTree = "<group>"; };
@@ -163,6 +177,24 @@
 		044F5E052140BD0A00D1D806 /* Student_lesson_historyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_lesson_historyViewController.xib; sourceTree = "<group>"; };
 		044F5E092140CE3100D1D806 /* Student_lesson_historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_lesson_historyTableViewCell.swift; sourceTree = "<group>"; };
 		044F5E0A2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_lesson_historyTableViewCell.xib; sourceTree = "<group>"; };
+		044F5E0F21420D6E00D1D806 /* Student_lesson_startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_lesson_startViewController.swift; sourceTree = "<group>"; };
+		044F5E1021420D6E00D1D806 /* Student_lesson_startViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_lesson_startViewController.xib; sourceTree = "<group>"; };
+		044F5E132142122600D1D806 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		044F5E19214213A900D1D806 /* DirectionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionService.swift; sourceTree = "<group>"; };
+		044F5E1B214217A800D1D806 /* Leg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		044F5E1C214217A900D1D806 /* Polyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polyline.swift; sourceTree = "<group>"; };
+		044F5E1D214217A900D1D806 /* GoogleMapValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapValue.swift; sourceTree = "<group>"; };
+		044F5E1E214217A900D1D806 /* GeocodedWaypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodedWaypoint.swift; sourceTree = "<group>"; };
+		044F5E1F214217A900D1D806 /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		044F5E20214217A900D1D806 /* DirectionOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionOverview.swift; sourceTree = "<group>"; };
+		044F5E21214217AA00D1D806 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		044F5E22214217AA00D1D806 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		044F5E23214217AA00D1D806 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		044F5E2E214217EA00D1D806 /* NikmeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikmeLogger.swift; sourceTree = "<group>"; };
+		044F5E332142640100D1D806 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		044F5E342142640100D1D806 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		044F5E382142645500D1D806 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		044F5E392142645500D1D806 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		04622B24212B9BF000E3AC5F /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
 		04622B25212B9BF000E3AC5F /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		04622B26212B9BF000E3AC5F /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
@@ -384,13 +416,67 @@
 		044F5E0E2141101300D1D806 /* 8.Student_lesson_start */ = {
 			isa = PBXGroup;
 			children = (
+				044F5E0F21420D6E00D1D806 /* Student_lesson_startViewController.swift */,
+				044F5E1021420D6E00D1D806 /* Student_lesson_startViewController.xib */,
 			);
 			name = 8.Student_lesson_start;
+			sourceTree = "<group>";
+		};
+		044F5E152142127300D1D806 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E1F214217A900D1D806 /* Bounds.swift */,
+				044F5E20214217A900D1D806 /* DirectionOverview.swift */,
+				044F5E1E214217A900D1D806 /* GeocodedWaypoint.swift */,
+				044F5E1D214217A900D1D806 /* GoogleMapValue.swift */,
+				044F5E1B214217A800D1D806 /* Leg.swift */,
+				044F5E22214217AA00D1D806 /* Location.swift */,
+				044F5E1C214217A900D1D806 /* Polyline.swift */,
+				044F5E21214217AA00D1D806 /* Route.swift */,
+				044F5E23214217AA00D1D806 /* Step.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		044F5E182142139000D1D806 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E19214213A900D1D806 /* DirectionService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		044F5E2D214217D500D1D806 /* Nikme */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E2E214217EA00D1D806 /* NikmeLogger.swift */,
+			);
+			name = Nikme;
+			sourceTree = "<group>";
+		};
+		044F5E32214263D100D1D806 /* 10.Info */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E372142643300D1D806 /* InfoCell */,
+				044F5E332142640100D1D806 /* InfoViewController.swift */,
+				044F5E342142640100D1D806 /* InfoViewController.xib */,
+			);
+			path = 10.Info;
+			sourceTree = "<group>";
+		};
+		044F5E372142643300D1D806 /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				044F5E382142645500D1D806 /* InfoTableViewCell.swift */,
+				044F5E392142645500D1D806 /* InfoTableViewCell.xib */,
+			);
+			name = InfoCell;
 			sourceTree = "<group>";
 		};
 		04622B23212B9BC600E3AC5F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				044F5E152142127300D1D806 /* Map */,
 				0479E3DE212CEE7A002D22B7 /* Datepicker */,
 				0479E3DD212CEE66002D22B7 /* DropDown */,
 			);
@@ -495,6 +581,7 @@
 				0479E3E4212D405F002D22B7 /* ValidatedHelper.swift */,
 				04493FC0212E75E000F8A23A /* UIHelper.swift */,
 				0422F00C2133D44900939059 /* PulicStruct.swift */,
+				044F5E132142122600D1D806 /* constants.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -571,7 +658,7 @@
 		049D251A21250EB50054214E = {
 			isa = PBXGroup;
 			children = (
-				0422F0172133F96E00939059 /* Nikme */,
+				044F5E2D214217D500D1D806 /* Nikme */,
 				049D252521250EB50054214E /* TEACHERS_IOS */,
 				049D253A21250EB50054214E /* TEACHERS_IOSTests */,
 				049D254521250EB60054214E /* TEACHERS_IOSUITests */,
@@ -620,6 +707,7 @@
 		049D255621250F0F0054214E /* Classess */ = {
 			isa = PBXGroup;
 			children = (
+				044F5E182142139000D1D806 /* Service */,
 				0467C598212F91E90047CA03 /* Base */,
 				048FA0F7212E87C8009CCC62 /* Manager */,
 				04493FB8212E6A0500F8A23A /* Defines */,
@@ -637,6 +725,7 @@
 		049D255721250F160054214E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				044F5E32214263D100D1D806 /* 10.Info */,
 				044F5E0E2141101300D1D806 /* 8.Student_lesson_start */,
 				044F5E0D2141029900D1D806 /* 6.Student_check_reservation */,
 				044F5E032140BCEA00D1D806 /* 7.Student_lesson_history */,
@@ -708,7 +797,6 @@
 			isa = PBXGroup;
 			children = (
 				0422EFDB21338CF300939059 /* Array+EXT.swift */,
-				0422EFDA21338CF200939059 /* Date+EXT.swift */,
 				0422EFDD21338CF300939059 /* Font+EXT.swift */,
 				0422EFE121338CF300939059 /* Number+EXT.swift */,
 				0422EFE021338CF300939059 /* UIColor+Ex.swift */,
@@ -943,6 +1031,7 @@
 				04622B28212B9BF000E3AC5F /* DropDownCell.xib in Resources */,
 				049D256921252D230054214E /* Teacher_RegisterViewController.xib in Resources */,
 				04F205EC212FB46200E94B20 /* Change_passwordViewController.xib in Resources */,
+				044F5E1221420D6E00D1D806 /* Student_lesson_startViewController.xib in Resources */,
 				048FA103212E9AFC009CCC62 /* Student_toppageViewController.xib in Resources */,
 				049D2565212520820054214E /* Forgot_passwordViewController.xib in Resources */,
 				048EC3952134DCB400557B28 /* Lesson_reservationTableViewCell.xib in Resources */,
@@ -951,7 +1040,8 @@
 				04F20601212FBBD500E94B20 /* Lesson_reservationViewController.xib in Resources */,
 				049D253121250EB50054214E /* LaunchScreen.storyboard in Resources */,
 				044F5E0C2140CE3100D1D806 /* Student_lesson_historyTableViewCell.xib in Resources */,
-				0422F0182133F96E00939059 /* Nikme in Resources */,
+				044F5E362142640100D1D806 /* InfoViewController.xib in Resources */,
+				044F5E3B2142645500D1D806 /* InfoTableViewCell.xib in Resources */,
 				044F5E072140BD0A00D1D806 /* Student_lesson_historyViewController.xib in Resources */,
 				04F205F2212FB6E700E94B20 /* Student_SettingViewController.xib in Resources */,
 				04F205FC212FBA2D00E94B20 /* Terms_of_serviceViewController.xib in Resources */,
@@ -1010,6 +1100,7 @@
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
 			);
@@ -1021,6 +1112,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
 			);
@@ -1075,20 +1167,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0422EFE621338CF300939059 /* UITableViewController+EXT.swift in Sources */,
+				044F5E2C214217AA00D1D806 /* Step.swift in Sources */,
 				044F5E062140BD0A00D1D806 /* Student_lesson_historyViewController.swift in Sources */,
 				049D2564212520820054214E /* Forgot_passwordViewController.swift in Sources */,
 				0422EFEB21339B4700939059 /* BaseViewcontroller.swift in Sources */,
 				0422EFF02133BB2500939059 /* BaseSlider.swift in Sources */,
+				044F5E142142122600D1D806 /* constants.swift in Sources */,
 				04F20615213006CC00E94B20 /* BaseNavigationViewCotroller.swift in Sources */,
 				04F205FB212FBA2D00E94B20 /* Terms_of_serviceViewController.swift in Sources */,
+				044F5E26214217AA00D1D806 /* GoogleMapValue.swift in Sources */,
 				04622B35212BAECF00E3AC5F /* DropDownButton.swift in Sources */,
 				0479E3E7212D462B002D22B7 /* String+ETX.swift in Sources */,
 				0422EFE921338CF300939059 /* Number+EXT.swift in Sources */,
 				04F205E1212FAA5C00E94B20 /* Student_profile_editViewController.swift in Sources */,
+				044F5E352142640100D1D806 /* InfoViewController.swift in Sources */,
 				0421EB5C212BB83C0024CACD /* BoderTextField.swift in Sources */,
 				0422EFE421338CF300939059 /* UIDevice+EXT.swift in Sources */,
+				044F5E2F214217EA00D1D806 /* NikmeLogger.swift in Sources */,
 				04884011212EB9A400E2C38B /* BorderUIView.swift in Sources */,
 				04493FBF212E750E00F8A23A /* Notification+ETX.swift in Sources */,
+				044F5E24214217AA00D1D806 /* Leg.swift in Sources */,
 				04F20605212FEB0400E94B20 /* MenuTableTableViewCell.swift in Sources */,
 				0422EFE721338CF300939059 /* UIImage+EXT.swift in Sources */,
 				048FA0FD212E8E62009CCC62 /* Register_BackTopViewController.swift in Sources */,
@@ -1101,12 +1199,12 @@
 				04622B2B212B9BF000E3AC5F /* DropDownCell.swift in Sources */,
 				04622B30212B9E5900E3AC5F /* DPDKeyboardListener.swift in Sources */,
 				0421EB5F212BC2D00024CACD /* GreenButton.swift in Sources */,
-				0422EFE221338CF300939059 /* Date+EXT.swift in Sources */,
 				0479E3F0212D6B3B002D22B7 /* ValidLabel.swift in Sources */,
 				048EC39A2135018D00557B28 /* CircleImageView.swift in Sources */,
 				04622B31212B9E5900E3AC5F /* DPDUIView+Extension.swift in Sources */,
 				0467C59B212F92130047CA03 /* BackgroundSideViewController.swift in Sources */,
 				04F205E4212FB19700E94B20 /* DisableTextfield.swift in Sources */,
+				044F5E28214217AA00D1D806 /* Bounds.swift in Sources */,
 				0422F00D2133D44900939059 /* PulicStruct.swift in Sources */,
 				0421EB61212BC5490024CACD /* WhiteButton.swift in Sources */,
 				0479E3E2212CFCD6002D22B7 /* DatePickerDialog.swift in Sources */,
@@ -1117,6 +1215,7 @@
 				04622B29212B9BF000E3AC5F /* DropDown.swift in Sources */,
 				048FA0FA212E87F9009CCC62 /* UserManager.swift in Sources */,
 				04493FBD212E74E000F8A23A /* Date+ETX.swift in Sources */,
+				044F5E25214217AA00D1D806 /* Polyline.swift in Sources */,
 				048FA102212E9AFC009CCC62 /* Student_toppageViewController.swift in Sources */,
 				04622B2A212B9BF000E3AC5F /* DropDown+Appearance.swift in Sources */,
 				049D256C21255B240054214E /* MaxLengthTextfield.swift in Sources */,
@@ -1127,15 +1226,22 @@
 				0422EFE321338CF300939059 /* Array+EXT.swift in Sources */,
 				048EC3972134FCC300557B28 /* BoldLabel.swift in Sources */,
 				0479E3E5212D405F002D22B7 /* ValidatedHelper.swift in Sources */,
+				044F5E2B214217AA00D1D806 /* Location.swift in Sources */,
 				04493FBB212E6B0E00F8A23A /* ServiceDefine.swift in Sources */,
 				048FA105212E9E3D009CCC62 /* WhiteLabel.swift in Sources */,
 				04622B2F212B9E5900E3AC5F /* DPDConstants.swift in Sources */,
 				049D256821252D230054214E /* Teacher_RegisterViewController.swift in Sources */,
+				044F5E1121420D6E00D1D806 /* Student_lesson_startViewController.swift in Sources */,
+				044F5E3A2142645500D1D806 /* InfoTableViewCell.swift in Sources */,
 				04493FC1212E75E000F8A23A /* UIHelper.swift in Sources */,
 				04720B182137D65C00764888 /* Student_RegisterViewController.swift in Sources */,
+				044F5E1A214213A900D1D806 /* DirectionService.swift in Sources */,
+				044F5E29214217AA00D1D806 /* DirectionOverview.swift in Sources */,
 				048FA108212EACC9009CCC62 /* UIView+ETX.swift in Sources */,
+				044F5E2A214217AA00D1D806 /* Route.swift in Sources */,
 				0422EFFC2133CBBD00939059 /* DatePicker.swift in Sources */,
 				0422EFE521338CF300939059 /* Font+EXT.swift in Sources */,
+				044F5E27214217AA00D1D806 /* GeocodedWaypoint.swift in Sources */,
 				049D252721250EB50054214E /* AppDelegate.swift in Sources */,
 				0422EFF32133BCDE00939059 /* BaseSegmentedController.swift in Sources */,
 				04F205F6212FB8B600E94B20 /* Inquiry_ViewController.swift in Sources */,

@@ -36,6 +36,46 @@ fileprivate extension String {
     func localized() -> String {
         return NSLocalizedString(self, tableName: Constants.resource, bundle: Bundle.moduleBundle, value: "", comment: "")
     }
-    
-}
 
+}
+import Foundation
+extension Date {
+    func timeAgoFromNow() -> String {
+        let yearComponents = Calendar.current.dateComponents([.year], from: self, to: Date())
+        
+        if let year = yearComponents.year, year > 0 {
+            return "\(year) year ago"
+        }
+        let monthsComponents = Calendar.current.dateComponents([.month], from: self, to: Date())
+        if let months = monthsComponents.month, months > 0 {
+            return "\(months) month ago"
+        }
+        let weekComponents = Calendar.current.dateComponents([.weekOfYear], from: self, to: Date())
+        if let weeks = weekComponents.weekOfYear, weeks > 0 {
+            return "\(weeks) week ago"
+        }
+        let dayComponents = Calendar.current.dateComponents([.day], from: self, to: Date())
+        if let days = dayComponents.day, days > 0 {
+            return "\(days) day ago"
+        }
+        let hoursComponents = Calendar.current.dateComponents([.hour], from: self, to: Date())
+        if let hours = hoursComponents.hour, hours > 0 {
+            return "\(hours) hours ago"
+        }
+        let minutesComponents = Calendar.current.dateComponents([.minute], from: self, to: Date())
+        if let minutes = minutesComponents.minute, minutes > 0 {
+            return "\(minutes) minutes ago"
+        }
+        return "just now ago"
+    }
+}
+extension Date
+{
+    init(dateString:String) {
+        let dateStringFormatter = DateFormatter()
+        dateStringFormatter.dateFormat = "MM/dd/yyyy"
+        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale!
+        let d = dateStringFormatter.date(from: dateString)!
+        self.init(timeInterval:0, since:d)
+    }
+}

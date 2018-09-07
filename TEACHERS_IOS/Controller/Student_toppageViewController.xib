@@ -149,6 +149,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4D-qg-tHb">
                                     <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
+                                    <connections>
+                                        <action selector="actionStudent_lesson_start:" destination="-1" eventType="touchUpInside" id="9do-tf-jn0"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -179,12 +182,15 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-bs-bV8">
+                                    <rect key="frame" x="20" y="19.5" width="146.5" height="134.5"/>
+                                </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aat-x5-1RK">
                                     <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
+                                    <connections>
+                                        <action selector="actionStudent_lesson_finish:" destination="-1" eventType="touchUpInside" id="tO0-yh-yQ3"/>
+                                    </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-bs-bV8">
-                                    <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
-                                </imageView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Aat-x5-1RK" firstAttribute="leading" secondItem="Yyv-bs-bV8" secondAttribute="leading" id="0cA-pl-3U2"/>
@@ -222,6 +228,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vED-rc-M95">
                                     <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
+                                    <connections>
+                                        <action selector="actionInfo:" destination="-1" eventType="touchUpInside" id="Ytm-6v-Qnh"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -257,6 +266,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOh-v2-kAw">
                                     <rect key="frame" x="20" y="20" width="146.5" height="134.5"/>
+                                    <connections>
+                                        <action selector="actionStudent_lesson_evaluation:" destination="-1" eventType="touchUpInside" id="WZM-KI-kWC"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

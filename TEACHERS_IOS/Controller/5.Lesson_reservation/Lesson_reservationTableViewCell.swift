@@ -9,6 +9,9 @@
 import UIKit
 import MGSwipeTableCell
 import Cosmos
+protocol Lesson_reservationTableViewCellDelegate {
+    func actionCallBookLesson() -> Void
+}
 class Lesson_reservationTableViewCell: MGSwipeTableCell {
 
     @IBOutlet weak var imgAvatar: UIImageView!
@@ -20,6 +23,9 @@ class Lesson_reservationTableViewCell: MGSwipeTableCell {
     @IBOutlet weak var lblCountReport: UILabel!
     @IBOutlet weak var lblRPTeacher: UILabel!
     @IBOutlet weak var ratingView: CosmosView!
+    @IBAction func actionBook(_ sender: AnyObject) {
+        print("push to 16.2")
+    }
     override func layoutSubviews() {
         super.layoutSubviews()
         self._setupUI()

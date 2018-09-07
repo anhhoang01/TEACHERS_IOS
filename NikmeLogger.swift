@@ -1,5 +1,6 @@
 //
 //  NikmeLogger.swift
+//  GoKeynote
 //
 //  Created by Tony Tuong on 8/28/16.
 //  Copyright © 2016 Nikmesoft Ltd Co. All rights reserved.

@@ -30,13 +30,15 @@ class Student_toppageViewController: BaseViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func actionStudent_lesson_start(_ sender: AnyObject) {
-        
+        let vc = Student_lesson_startViewController.nib()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func actionStudent_lesson_finish(_ sender: AnyObject) {
         
     }
     @IBAction func actionInfo(_ sender: AnyObject) {
-        
+        let vc = InfoViewController.nib()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func actionStudent_lesson_evaluation(_ sender: AnyObject) {
         

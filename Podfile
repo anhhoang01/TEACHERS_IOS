@@ -14,6 +14,7 @@ target 'TEACHERS_IOS' do
     pod 'GooglePlaces', '~> 2.1'
     pod 'Alamofire', '~> 4.7.3'
     pod 'MGSwipeTableCell', '~> 1.6.7'
+    pod 'ObjectMapper', '2.2.2'
 end
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

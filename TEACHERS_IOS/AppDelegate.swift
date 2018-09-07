@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let API_KEY = "AIzaSyDYnkf18P9cfccL8ht1dpWH1cUOHa8QOBI"
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        GMSServices.provideAPIKey("AIzaSyDYnkf18P9cfccL8ht1dpWH1cUOHa8QOBI")
-        GMSPlacesClient.provideAPIKey("AIzaSyDYnkf18P9cfccL8ht1dpWH1cUOHa8QOBI")
+        GMSServices.provideAPIKey(API_KEY)
+        GMSPlacesClient.provideAPIKey(API_KEY)
         if (kUserDefault.bool(forKey: kuser)){
             let viewcontroller = Student_toppageViewController.nib()
             let navigation = BaseNavigationController(rootViewController: viewcontroller)
